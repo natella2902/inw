@@ -10,6 +10,11 @@
 
     width: 660px;
     height: 500px;
+
+    @include phones {
+      width: 330px;
+      height: 250px;
+    }
   }
 
   &__pic {
@@ -25,6 +30,7 @@
   background-repeat: no-repeat;
   background-position: left center;
 
+
   &__container {
     display: flex;
     align-items: center;
@@ -32,6 +38,10 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right center;
+
+    @include phones {
+     flex-direction: column; 
+    }
   
   }
 
@@ -42,6 +52,12 @@
     height: 490px;
     flex: 1;
     margin-right: 70px;
+
+    @include phones {
+     width: 270px;
+     height: 250px; 
+     margin-right: 0;
+    }
   }
 
   &__info {

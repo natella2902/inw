@@ -24,6 +24,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
+
+  @include phones {
+    font-size: 19px;
+  }
 }
 
 .wrapper {
@@ -261,10 +265,11 @@ table {
   font-weight: 500;
 
   @include phones {
-    font-size: 19px;
-
+    font-size: 38px;
   }
 }
+
+
 
 .btn {
   font-size: 18px;
