@@ -3,9 +3,27 @@
 background-color: white;
 min-height: 500px;
 
+  @include tablets {
+    padding: 50px 50px 50px 50px;
+  }
+
+  @include phones {
+    padding: 50px 0 50px 0;
+  }
+
   &__container {
     display: flex;
     padding: 80px 0 0 80px;
+
+    @include tablets {
+      padding: 0;
+    }
+  }
+
+  &__item {
+    @include phones {
+      margin-bottom: 15px;
+    }
   }
 
 
@@ -14,6 +32,11 @@ min-height: 500px;
     font-weight: 300;
     margin-bottom: 30px;
     display: flex;
+
+    @include phones {
+      flex-direction: column;
+      margin-bottom: 0;
+    }
 
   }
 
@@ -33,7 +56,7 @@ min-height: 500px;
     white-space: nowrap;
     position: relative;
 
-    &:after {
+      &:after {
       content: "\2192";
       display: block;
       font-size: 18px;
@@ -42,6 +65,7 @@ min-height: 500px;
       top: 0;
       right: -25px;
     }
+
   }
 
 
