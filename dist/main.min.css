@@ -2358,6 +2358,16 @@ body {
   background-color: #b4e29d;
   color: #000; }
 
+.point-hero__content {
+  width: 45%; }
+  @media screen and (max-width: 768px) {
+    .point-hero__content {
+      width: 80%; } }
+  @media screen and (max-width: 480px) {
+    .point-hero__content {
+      width: 100%;
+      margin-bottom: 2.5rem; } }
+
 .point-hero__img {
   background-image: url("./images/icons/pos-hero.svg");
   background-repeat: no-repeat;
@@ -2378,6 +2388,9 @@ body {
   background-size: 31.25rem 31.25rem;
   background-repeat: no-repeat;
   background-position: left center; }
+  @media screen and (max-width: 768px) {
+    .point-about {
+      padding: 3.125rem; } }
   .point-about__container {
     display: flex;
     align-items: center;
@@ -2395,6 +2408,9 @@ body {
     height: 30.625rem;
     flex: 1;
     margin-right: 4.375rem; }
+    @media screen and (max-width: 768px) {
+      .point-about__img {
+        margin-right: 2.5rem; } }
     @media screen and (max-width: 480px) {
       .point-about__img {
         width: 16.875rem;
@@ -2419,6 +2435,10 @@ body {
   background-size: 44.75rem 45.875rem;
   background-repeat: no-repeat;
   background-position: center right; }
+  @media screen and (max-width: 768px) {
+    .point-features {
+      padding: 3.125rem 3.125rem 3.125rem 3.125rem;
+      background-position: center right -100%; } }
   @media screen and (max-width: 480px) {
     .point-features {
       padding: 22.5rem 0 3.125rem 0;
@@ -2437,6 +2457,9 @@ body {
     margin-bottom: 5rem; }
     .point-features__row:last-child {
       margin-bottom: 0; }
+    @media screen and (max-width: 768px) {
+      .point-features__row {
+        width: 70%; } }
     @media screen and (max-width: 480px) {
       .point-features__row {
         width: 100%; } }
@@ -2476,6 +2499,9 @@ body {
 .point-works {
   padding: 6.25rem 0rem 6.25rem 0rem;
   background-color: white; }
+  @media screen and (max-width: 768px) {
+    .point-works {
+      padding: 3.125rem 3.125rem 3.125rem 3.125rem; } }
   .point-works__container {
     display: flex;
     flex-direction: column;
@@ -2503,6 +2529,9 @@ body {
       height: 1px;
       width: 100%;
       background-color: #d1d1d1; }
+      @media screen and (max-width: 768px) {
+        .point-works__list:before {
+          top: 7.1875rem; } }
       @media screen and (max-width: 480px) {
         .point-works__list:before {
           width: 1px;
@@ -2559,6 +2588,9 @@ body {
 
 .point-transactions {
   background-color: white; }
+  @media screen and (max-width: 768px) {
+    .point-transactions {
+      padding: 3.125rem; } }
   .point-transactions__container {
     display: flex;
     align-items: center; }
@@ -3178,13 +3210,20 @@ body {
 
 .data-hero__content {
   width: 45%; }
+  @media screen and (max-width: 768px) {
+    .data-hero__content {
+      width: 80%; } }
   @media screen and (max-width: 480px) {
     .data-hero__content {
-      width: 100%; } }
+      width: 100%;
+      margin-bottom: 2.5rem; } }
 
 .data-about {
   padding: 8.75rem 0rem 3.125rem 0rem;
   background-color: white; }
+  @media screen and (max-width: 768px) {
+    .data-about {
+      padding: 3.125rem 3.125rem 3.125rem 3.125rem; } }
   @media screen and (max-width: 480px) {
     .data-about {
       padding: 3.125rem 0rem 3.125rem 0rem; } }
@@ -3237,6 +3276,10 @@ body {
       position: absolute;
       top: 0.3125rem;
       left: -1.875rem; }
+      @media screen and (max-width: 768px) {
+        .data-about__item:before {
+          width: 1.25rem;
+          height: 1.25rem; } }
       @media screen and (max-width: 480px) {
         .data-about__item:before {
           width: 1.25rem;
@@ -3259,6 +3302,9 @@ body {
 .data-feature {
   background-color: white;
   min-height: 31.25rem; }
+  @media screen and (max-width: 768px) {
+    .data-feature {
+      padding: 0rem 3.125rem 3.125rem 3.125rem; } }
   .data-feature__container {
     display: flex;
     flex-direction: column;
@@ -3340,6 +3386,10 @@ body {
   color: white;
   margin-left: 6.25rem;
   margin-right: 6.25rem; }
+  @media screen and (max-width: 768px) {
+    .data-powered {
+      margin-left: 3.125rem;
+      margin-right: 3.125rem; } }
   @media screen and (max-width: 480px) {
     .data-powered {
       background-position: bottom -3.75rem left -9.375rem;
@@ -3352,6 +3402,9 @@ body {
     display: flex;
     flex-direction: column;
     padding: 3.75rem 0 0 3.125rem; }
+    @media screen and (max-width: 768px) {
+      .data-powered__container {
+        padding: 1.25rem 0 0 1.25rem; } }
     @media screen and (max-width: 480px) {
       .data-powered__container {
         padding: 2.5rem 0 0 0; } }
@@ -3374,6 +3427,9 @@ body {
 
 .data-getting {
   background-color: white; }
+  @media screen and (max-width: 768px) {
+    .data-getting {
+      padding: 3.125rem 3.125rem 3.125rem 3.125rem; } }
   @media screen and (max-width: 480px) {
     .data-getting {
       padding: 3.125rem; } }
@@ -3381,7 +3437,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between; }
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 768px) {
       .data-getting__container {
         flex-direction: column; } }
   .data-getting__pic {
@@ -3403,6 +3459,9 @@ body {
     font-size: 1.25rem;
     font-weight: 300;
     width: 45%; }
+    @media screen and (max-width: 768px) {
+      .data-getting__info {
+        width: 100%; } }
     @media screen and (max-width: 480px) {
       .data-getting__info {
         width: 100%; } }

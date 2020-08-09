@@ -32,8 +32,14 @@
   &__content {
     width: 45%;
 
+    @include tablets {
+      width: 80%;
+
+    }
+
     @include phones {
       width: 100%;
+      margin-bottom: 40px;
     }
   }
 }
@@ -41,6 +47,10 @@
 .data-about {
   padding: 140px 0px 50px 0px;
   background-color: white;
+
+  @include tablets {
+    padding: 50px 50px 50px 50px;
+  }
 
   @include phones {
     padding: 50px 0px 50px 0px;
@@ -112,6 +122,11 @@
       position: absolute;
       top: 5px;
       left:  -30px;
+
+      @include tablets {
+        width: 20px;
+        height: 20px;
+      }
 
       @include phones {
         width: 20px;
