@@ -4,11 +4,20 @@
   &__container {
     padding-top: 90px;
     border-top: 1px dotted rgba(89, 126, 150, .3);
+
+    @media screen and (max-width: 890px) {
+      max-width: 90%;
+      padding-bottom: 50px;
+    }
   }
 
   &__list {
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: 690px) {
+      flex-direction: column;
+    }
   }
 
   &__desc {
@@ -28,6 +37,11 @@
       font-size: 28px;
       margin-bottom: 33px;
       line-height: 30px;
+    }
+
+    @media screen and (max-width: 690px) {
+      margin-right: 0;
+      margin-bottom: 30px;
     }
   }
 
