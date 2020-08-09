@@ -37,6 +37,12 @@
   &--check {
     margin-top: 70px;
     margin-bottom: 50px;
+
+    @media screen and (max-width: 940px) {
+      margin-top: 0;
+      margin-bottom: 30px;
+      padding-bottom: 0;
+    }
   }
 
   &__container {
