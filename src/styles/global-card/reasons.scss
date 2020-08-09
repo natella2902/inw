@@ -15,6 +15,10 @@
     align-items: flex-start;
     margin-bottom: 60px;
 
+    @media screen and (max-width: 710px) {
+      flex-direction: column;
+    }
+
     &:last-child {
       margin-bottom: 0;
     }
@@ -35,10 +39,27 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+
+    @media screen and (max-width: 710px) {
+      flex-direction: column;
+    }
   }
 
   &__item {
     margin-right: 45px;
+
+    @media screen and (max-width: 710px) {
+      margin-right: 0px;
+      margin-bottom: 38px;
+      padding-bottom: 29px;
+      border-bottom: dotted 1px rgba(89, 126, 150, .3);
+
+      &:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+      }
+    }
+
 
     &:last-child {
       margin-right: 0;
