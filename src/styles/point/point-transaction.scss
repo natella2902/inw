@@ -5,11 +5,20 @@
   &__container {
     display: flex;
     align-items: center;
+
+    @include phones {
+      flex-direction: column;
+    }
   }
 
   &__img {
     width: 860px;
     height: 660px;
+
+    @include phones {
+      width: 430px;
+      height: 330px;
+    }
   }
 
   &__pic {
@@ -19,6 +28,10 @@
 
   &__info {
     width: 50%;
+
+    @include phones {
+      width: 100%;
+    }
   }
 
 
