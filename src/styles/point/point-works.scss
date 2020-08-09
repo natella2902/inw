@@ -3,6 +3,11 @@
   padding: 100px 0px 100px 0px;
   background-color: white;
 
+  @include tablets {
+    padding: 50px 50px 50px 50px;
+
+  }
+
   &__container {
     display: flex;
     flex-direction: column;
@@ -38,6 +43,10 @@
       height: 1px;
       width: 100%;
       background-color: #d1d1d1;
+
+      @include tablets {
+        top: 115px;
+      }
 
       @include phones {
         width: 1px;

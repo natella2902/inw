@@ -2,6 +2,11 @@
   background-color: white;
   min-height: 500px;
 
+  @include tablets {
+    padding: 0px 50px 50px 50px;
+  }
+
+
   &__container {
     display: flex;
     flex-direction: column;

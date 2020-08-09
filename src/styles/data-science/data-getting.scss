@@ -1,6 +1,11 @@
 .data-getting {
   background-color: white;
-  
+
+   
+  @include tablets {
+    padding: 50px 50px 50px 50px;
+  }
+
   @include phones {
     padding: 50px;
   }
@@ -10,8 +15,9 @@
     align-items: center;
     justify-content: space-between;
 
-    @include phones {
+    @include tablets {
       flex-direction: column;
+  
     }
   }
 
@@ -42,6 +48,10 @@
     font-size: 20px;
     font-weight: 300;
     width: 45%;
+
+    @include tablets {
+      width: 100%;
+    }
 
     @include phones {
       width: 100%;
