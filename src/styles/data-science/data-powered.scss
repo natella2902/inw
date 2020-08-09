@@ -1,0 +1,32 @@
+.data-powered {
+  background-color: white;
+  min-height: 500px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;    
+    background-image: url('./images/icons/sapce.svg');
+    background-size: 1000px 700px;
+    background-repeat: no-repeat;
+    background-position: bottom -100px right -150px;
+    background-color: #df271c;
+    color: white;
+
+    padding: 80px 0 0 80px;
+  }
+
+
+  &__info {
+    width: 50%;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 30px;
+  }
+
+
+  &__subtitle {
+    width: 50%;
+    margin-bottom: 43px;
+  }
+
+}

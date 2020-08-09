@@ -1,0 +1,127 @@
+.payment-methods {
+  padding-top: 92px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__subtext {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 300;
+  }
+
+  &__subtitle {
+    margin-bottom: 25px;
+  }
+
+  &__europe,
+  &__america {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__europe {
+    border-bottom: 1px solid #d6d6d6;
+  }
+
+  &__america {
+    padding-top: 59px;
+  }
+
+  &__row {
+    margin-bottom: 48px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:first-of-type {
+      .payment-methods__item {
+
+        border-bottom: 1px dotted #d6d6d6;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  &__item {
+    flex: 1;
+    padding-bottom: 45px;
+    margin-right: 25px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &-head,
+    &-row {
+      display: flex;
+      align-items: center;
+    }
+
+    &-head {
+      margin-bottom: 20px;
+    }
+
+    &-row {
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &-subtitle {
+      margin-bottom: 0;
+      font-size: 28px;
+      font-weight: 500;
+    }
+  }
+
+  &__flag {
+    margin-right: 15px;
+    width: 40px;
+    height: 24px;
+  }
+
+  &__desc {
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  &__pay-icon {
+    margin-right: 16px;
+
+    &--maestro {
+      width: 29px;
+      height: 18px;
+    }
+
+    &--amex {
+      width: 21px;
+      height: 21px;
+    }
+
+    &--ali {
+      width: 22px;
+      height: 21px;
+    }
+
+    &--master {
+      width: 29px;
+      height: 18px;
+    }
+
+    &--paypal {
+      width: 20px;
+      height: 23px;
+    }
+  }
+}

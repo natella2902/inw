@@ -1,0 +1,80 @@
+.point-features {
+
+  padding: 140px 0px 115px 0px;
+  background-color: #f1f7fd;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    background-image: url('./images/icons/vendor.svg');
+    background-size: 716px 734px;
+    background-repeat: no-repeat;
+    background-position: center right -50%;
+  
+  }
+
+  &__row {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    margin-right: 45px;
+    flex: 1;
+  
+
+  
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &-subtitle {
+      font-size: 28px;
+      margin-top: 33px;
+      margin-bottom: 33px;
+      line-height: 30px;
+    }
+  }
+
+  &__icon--1 {
+    width: 61px;
+    height: 43px;
+    background-image: url('./images/icons/icon-hardware.svg');
+
+  }
+
+  &__icon--2 {
+    width: 47px;
+    height: 47px;
+    background-image: url('./images/icons/icon-europe.svg');
+
+  }
+
+  &__icon--3 {
+    width: 75px;
+    height: 47px;
+    background-image: url('./images/icons/icon-maestro.svg');
+
+  }
+
+
+  &__info {
+    font-size: 20px;
+    font-weight: 300;
+  }
+}

@@ -1,0 +1,56 @@
+.checkout-features {
+  min-height: 350px;
+
+  &__container {
+    padding-top: 90px;
+    border-top: 1px dotted rgba(89, 126, 150, .3);
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__desc {
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  &__item {
+    margin-right: 20px;
+    flex: 1;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+
+    &-subtitle {
+      font-size: 28px;
+      margin-bottom: 33px;
+      line-height: 30px;
+    }
+  }
+
+  &__link {
+    margin-top: 14px;
+    font-size: 20px;
+    font-weight: 300;
+    color: $colorRed;
+    border-bottom: 1px dotted $colorRed;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    max-width: 120px;
+
+    &:after {
+      content: "\2192";
+      display: block;
+      font-size: 18px;
+      color: $colorRed;
+      position: absolute;
+      top: 0;
+      right: -25px;
+    }
+  }
+}

@@ -1,0 +1,98 @@
+.fraud-features {
+  background-color: $colorDustyBlue;
+  padding: 90px 0px 60px 0px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__head {
+    margin-bottom: 10px;
+    max-width: 450px;
+    text-align: center;
+  }
+
+  &__subtitle {
+    line-height: 45px;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__row {
+    margin-bottom: 60px;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+
+  &__item {
+    flex: 1;
+    margin-right: 25px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &-subtitle {
+      font-size: 28px;
+      margin-top: 33px;
+      margin-bottom: 33px;
+      line-height: 30px;
+    }
+  }
+
+  &__info {
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  &__icon {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__img {
+    &--1 {
+      width: 58px;
+      height: 46px;
+    }
+
+    &--2 {
+      width: 59px;
+      height: 59px;
+    }
+
+    &--3 {
+      width: 38px;
+      height: 53px;
+    }
+
+    &--4 {
+      width: 46px;
+      height: 41px;
+    }
+
+    &--5 {
+      width: 37px;
+      height: 59px;
+    }
+
+    &--6 {
+      width: 32px;
+      height: 42px;
+    }
+
+  }
+}

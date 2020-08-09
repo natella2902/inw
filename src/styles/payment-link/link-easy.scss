@@ -1,0 +1,48 @@
+.link-easy {
+
+background-color: white;
+min-height: 500px;
+
+  &__container {
+    display: flex;
+    padding: 80px 0 0 80px;
+  }
+
+
+  &__info {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    display: flex;
+
+  }
+
+
+  &__subtitle {
+    margin-bottom: 43px;
+  }
+
+  &__link {
+    display: inline;
+    font-size: 18px;
+    font-weight: 300;
+    color: $colorRed;
+    border-bottom: 1px dotted $colorRed;
+    outline: none;
+    cursor: pointer;
+    white-space: nowrap;
+    position: relative;
+
+    &:after {
+      content: "\2192";
+      display: block;
+      font-size: 18px;
+      color: $colorRed;
+      position: absolute;
+      top: 0;
+      right: -25px;
+    }
+  }
+
+
+}

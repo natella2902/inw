@@ -1,0 +1,93 @@
+.data-feature {
+  background-color: white;
+  min-height: 500px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  
+  }
+
+  &__row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    margin-right: 100px;
+    flex: 1;  
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &-subtitle {
+      font-size: 28px;
+      margin-top: 33px;
+      margin-bottom: 33px;
+      line-height: 30px;
+    }
+  }
+
+  &__icon {
+    background-repeat: no-repeat;
+  }
+
+  &__icon--1 {
+    width: 44px;
+    height: 42px;
+    background-image: url('./images/icons/icon-hasta.svg');
+
+  }
+
+  &__icon--2 {
+    width: 37px;
+    height: 54px;
+    background-image: url('./images/icons/icon-bucks.svg');
+
+  }
+
+
+
+  &__info {
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  &__link {
+    max-width: 165px;
+    font-size: 18px;
+    font-weight: 300;
+    color: $colorRed;
+    border-bottom: 1px dotted $colorRed;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    white-space: nowrap;
+    margin-top: 30px;
+
+    &:after {
+      content: "\2192";
+      display: block;
+      font-size: 18px;
+      color: $colorRed;
+      position: absolute;
+      top: 0;
+      right: -25px;
+    }
+  }
+}

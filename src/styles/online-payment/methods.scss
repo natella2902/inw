@@ -1,0 +1,60 @@
+.methods {
+  padding-top: 126px;
+  padding-bottom: 126px;
+  background-image: url("./pictures/payment-left.png"), url("./pictures/payment-right.png");
+  background-repeat: no-repeat, no-repeat;
+  background-position-x: 2%, 98%;
+  background-position-y: 30%, 30%;
+  background-size: 41%, 41%;
+  margin: 50px 50px;
+
+  &--omni {
+    margin-top: 90px;
+    margin-bottom: 50px;
+  }
+
+  &--check {
+    margin-top: 70px;
+    margin-bottom: 50px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    max-width: 42rem;
+  }
+
+  &__subtitle {
+    margin-bottom: 35px;
+    line-height: 44px;
+  }
+
+  &__desc {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 31px;
+  }
+
+  &__link {
+    max-width: 210px;
+    font-size: 24px;
+    font-weight: 300;
+    color: $colorRed;
+    border-bottom: 1px dotted $colorRed;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+
+    &:after {
+      content: "\2192";
+      display: block;
+      font-size: 18px;
+      color: $colorRed;
+      position: absolute;
+      top: 0;
+      right: -25px;
+    }
+  }
+}

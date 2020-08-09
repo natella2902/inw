@@ -1,0 +1,57 @@
+.point-transactions {
+
+  background-color: white;
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__img {
+    width: 860px;
+    height: 660px;
+  }
+
+  &__pic {
+    height: 100%;
+    width: 100%;
+  }
+
+  &__info {
+    width: 50%;
+  }
+
+
+  &__subtitle {
+    margin-bottom: 43px;
+  }
+
+  &__desc {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 48px;
+  }
+
+  &__link {
+    max-width: 82px;
+    font-size: 18px;
+    font-weight: 300;
+    color: $colorRed;
+    border-bottom: 1px dotted $colorRed;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+
+    &:after {
+      content: "\2192";
+      display: block;
+      font-size: 18px;
+      color: $colorRed;
+      position: absolute;
+      top: 0;
+      right: -25px;
+    }
+  }
+
+}

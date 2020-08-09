@@ -1,0 +1,58 @@
+.fraud-how {
+  padding: 120px 0px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 23%;
+      height: 1px;
+      width: 100%;
+      background-color: #d1d1d1;
+    }
+  }
+
+  &__item {
+    flex: 1;
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+
+  &__number {
+    font-size: 40px;
+    font-weight: 500;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    color: #df271c;
+  }
+
+  &__img {
+    margin-bottom: 36px;
+    height: 44px;
+    width: 44px;
+  }
+
+  &__pic {
+    height: 100%;
+    width: 100%;
+    transform: rotate(-45deg);
+  }
+
+  &__desc {
+    font-size: 22px;
+    font-weight: 300;
+  }
+}

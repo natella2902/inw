@@ -1,0 +1,91 @@
+.tokenization {
+
+  padding: 110px 0px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__head {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 68px;
+    max-width: 505px;
+  }
+
+  &__subtitle {
+    margin-bottom: 15px;
+  }
+
+  &__subtext {
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    margin-right: 85px;
+    flex: 1;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+
+    &-subtitle {
+      font-size: 28px;
+      margin-top: 33px;
+      margin-bottom: 33px;
+      line-height: 30px;
+    }
+  }
+
+  &__info {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 35px;
+  }
+
+  &__img--1 {
+    width: 44px;
+    height: 59px;
+  }
+
+  &__img--2 {
+    width: 52px;
+    height: 48px;
+  }
+
+  &__icon {
+    width: 100%;
+    height: 100%;
+  }
+
+
+  &__link {
+    font-size: 20px;
+    font-weight: 300;
+    color: $colorRed;
+    border-bottom: 1px dotted $colorRed;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    max-width: 300px;
+
+    &:after {
+      content: "\2192";
+      display: block;
+      font-size: 18px;
+      color: $colorRed;
+      position: absolute;
+      top: 0;
+      right: -25px;
+    }
+  }
+}

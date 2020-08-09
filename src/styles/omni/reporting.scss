@@ -1,0 +1,64 @@
+.reporting {
+  background-color: $colorSkyBlue;
+  background-image: url("./pictures/omnichannel2.png");
+  background-size: 55%;
+  background-position: 90% 60%;
+  background-repeat: no-repeat;
+  padding-bottom: 70px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__img {
+    width: 560px;
+    height: 300px;
+    flex: 1;
+  }
+
+  &__info {
+    flex: 1;
+    margin-right: 90px;
+    max-width: 350px;
+  }
+
+  &__pic {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__subtitle {
+    margin-bottom: 36px;
+    line-height: 45px;
+  }
+
+  &__desc {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 27px;
+  }
+
+  &__link {
+    max-width: 120px;
+    font-size: 24px;
+    font-weight: 300;
+    color: $colorRed;
+    border-bottom: 1px dotted $colorRed;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+
+    &:after {
+      content: "\2192";
+      display: block;
+      font-size: 18px;
+      color: $colorRed;
+      position: absolute;
+      top: 0;
+      right: -25px;
+    }
+  }
+
+}

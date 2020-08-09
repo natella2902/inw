@@ -1,0 +1,83 @@
+.fraud-problems {
+  padding: 111px 0px 112px 0px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  &__subtitle {
+    line-height: 45px;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 90px;
+
+    &--first {
+      align-items: center;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &--middle {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__intro {
+    flex: 1;
+  }
+
+  &__img {
+    width: 455px;
+    height: 366px;
+    margin-right: 25px;
+    flex: 1;
+    position: relative;
+  }
+
+  &__pic {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 7%;
+    left: -3%;
+  }
+
+  &__desc {
+    font-size: 24px;
+    font-weight: 300;
+    flex: 8;
+  }
+
+  &__info {
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    margin-right: 50px;
+    flex: 1;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &-subtitle {
+      font-size: 28px;
+      margin-top: 33px;
+      margin-bottom: 33px;
+      line-height: 30px;
+    }
+  }
+}
