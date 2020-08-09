@@ -24,6 +24,10 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    @include phones {
+      flex-direction: column;
+    }
   }
 
   &__item {
@@ -32,6 +36,11 @@
 
     &:last-child {
       margin-right: 0;
+    }
+
+    @include phones {
+      margin-right: 0;
+      margin-bottom: 50px;
     }
 
     &-subtitle {
