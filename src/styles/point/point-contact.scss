@@ -11,6 +11,10 @@
       padding: 15px 15px 0px 15px;
       flex-direction: column-reverse;
     }
+
+    @include phones {
+      padding: 0;
+    }
   }
 
 
