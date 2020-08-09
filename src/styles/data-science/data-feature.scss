@@ -2,6 +2,11 @@
   background-color: white;
   min-height: 500px;
 
+  @include tablets {
+    padding: 0px 50px 50px 50px;
+  }
+
+
   &__container {
     display: flex;
     flex-direction: column;
@@ -24,6 +29,10 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    @include phones {
+      flex-direction: column;
+    }
   }
 
   &__item {
@@ -32,6 +41,11 @@
 
     &:last-child {
       margin-right: 0;
+    }
+
+    @include phones {
+      margin-right: 0;
+      margin-bottom: 50px;
     }
 
     &-subtitle {
