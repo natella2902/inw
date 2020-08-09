@@ -1,5 +1,5 @@
 .payments {
-  min-height: 630px;
+  min-height: 700px;
   padding-top: 90px;
   padding-bottom: 90px;
   background-image: url("./pictures/global-left.png"), url("./pictures/global-right.png");
@@ -11,7 +11,7 @@
 
   @media screen and (max-width: 1020px) {
     background-image: none;
-
+    margin: 50px 0px 0px 0px;
   }
 
   @include phones {
@@ -24,8 +24,20 @@
   &__container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: left;
     max-width: 44.5rem;
+
+    @media screen and (max-width: 1020px) {
+      align-items: flex-start;
+      max-width: 100%;
+      justify-content: center;
+    }
+
+    @include tablets {
+      max-width: 90%;
+    }
+
   }
 
   &__intro {
@@ -34,6 +46,10 @@
     align-items: flex-start;
     padding-left: 10px;
     margin-bottom: 35px;
+
+    @media screen and (max-width: 1020px) {
+      padding-left: 0;
+    }
   }
 
   &__subtitle {
@@ -49,9 +65,8 @@
   }
 
   &__desc {
-    padding-left: 10px;
     font-size: 24px;
     font-weight: 300;
-    max-width: 660px;
+    max-width: 680px;
   }
 }

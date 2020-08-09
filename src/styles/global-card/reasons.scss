@@ -7,6 +7,10 @@
     align-items: flex-start;
     border-top: dotted 1px rgba(89, 126, 150, .3);
     padding-top: 70px;
+
+    @media screen and (max-width: 890px) {
+      max-width: 90%;
+    }
   }
 
   &__row {
