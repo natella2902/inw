@@ -4,6 +4,13 @@
   &__container {
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: 980px) {
+      flex-direction: column;
+      max-width: 90%;
+      padding: 50px 0px;
+    }
+
   }
 
   &__img {
@@ -11,19 +18,30 @@
     width: 686px;
     min-width: 586px;
     height: 567px;
-    flex: 1;
     margin-right: 10px;
+
+    @media screen and (max-width: 980px) {
+      min-width: 386px;
+      width: 426px;
+      height: 350px;
+      margin-bottom: 40px;
+    }
   }
 
-  &__info {
-    flex: 2;
-  }
 
   &__pic {
     position: absolute;
     left: -30%;
     width: 100%;
     height: 100%;
+
+    @media screen and (max-width: 980px) {
+      left: -10%;
+    }
+
+    @include phones {
+      left: 0;
+    }
   }
 
   &__subtitle {
@@ -35,6 +53,11 @@
     font-size: 24px;
     font-weight: 300;
     margin-bottom: 48px;
+
+    @media screen and (max-width: 980px) {
+
+      margin-bottom: 0px;
+    }
   }
 
 }
