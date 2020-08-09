@@ -217,6 +217,10 @@
     position: absolute;
     top: 6%;
     left: -9%;
+
+    @include phones {
+      left: 0;
+    }
   }
 
   &--contact-us {
@@ -387,6 +391,27 @@
         padding-top: 46px;
         flex-direction: column;
         padding-bottom: 0;
+      }
+    }
+
+    .hero__content {
+      @include tablets {
+        width: 70%;
+        margin-bottom: 15px;
+      }
+
+      @include phones {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  &--fraud {
+    .hero__container {
+      @include tablets {
+        padding-top: 46px;
+        flex-direction: column;
       }
     }
 
