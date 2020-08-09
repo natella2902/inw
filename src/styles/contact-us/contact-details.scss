@@ -11,21 +11,45 @@
   min-height: 25.625rem;
   width: 100%;
   position: absolute;
-  top: -25%;
+  top: -27%;
   z-index: 1;
+
+  @include tablets {
+    top: 0;
+    position: relative;
+    min-height: 20rem;
+  }
 
   &__container {
     padding: 84px 0px 160px 0px;
+
+    @include tablets {
+      max-width: 90%;
+      padding: 80px 0px;
+    }
+
+    @media screen and (max-width: 710px) {
+      padding: 70px 0px 50px 0px;
+    }
   }
 
   &__list {
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: 710px) {
+      flex-direction: column;
+    }
   }
 
   &__item {
     flex: 1;
     margin-right: 30px;
+
+    @media screen and (max-width: 710px) {
+      margin-right: 0;
+      margin-bottom: 78px;
+    }
 
     &:last-child {
       margin-right: 0;

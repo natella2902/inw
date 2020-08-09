@@ -26,10 +26,6 @@
     width: 540px;
     height: 562px;
 
-    @include tablets {
-      margin-bottom: 54px;
-    }
-
   }
 
   &__pic {
@@ -217,7 +213,6 @@
   }
 
   &--contact-us {
-    flex: 1;
     height: 411px;
     width: 509px;
     position: relative;
@@ -233,7 +228,7 @@
     top: 6%;
     left: -9%;
 
-    @include phones {
+    @include tablets {
       left: 0;
     }
   }
@@ -242,6 +237,10 @@
     position: absolute;
     left: 9%;
     top: -2%;
+
+    @include tablets {
+      top: 3%;
+    }
   }
 
   &--global {
@@ -275,7 +274,8 @@
     left: 20%;
 
     @include tablets {
-      left: -5%;
+      left: 0;
+      margin-top: 20px;
     }
 
     @include phones {
@@ -306,6 +306,10 @@
 
     .hero__container {
       padding-bottom: 0;
+    }
+
+    @include tablets {
+      margin-bottom: 0;
     }
   }
 
@@ -485,6 +489,27 @@
   }
 
   &--reporting {
+    .hero__container {
+      @include tablets {
+        padding-top: 46px;
+        flex-direction: column;
+      }
+    }
+
+    .hero__content {
+      @include tablets {
+        width: 70%;
+        margin-bottom: 15px;
+      }
+
+      @include phones {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  &--contact-us {
     .hero__container {
       @include tablets {
         padding-top: 46px;
