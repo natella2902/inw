@@ -3,6 +3,12 @@
   color: #0e0e0e;
 }
 
+.header--data {
+  @include phones {
+    margin-bottom: 30px;
+  }
+}
+
 .data-hero {
   &__img {
     background-image: url('./images/icons/data-science-illu.svg');
@@ -10,6 +16,12 @@
     background-position: center right;
     width: 600px;
     height: 412px;
+
+    @include phones {
+      width: 300px;
+      height: 210px;
+    }
+
   }
 
   &__pic {
@@ -19,6 +31,10 @@
 
   &__content {
     width: 45%;
+
+    @include phones {
+      width: 100%;
+    }
   }
 }
 
@@ -26,10 +42,17 @@
   padding: 140px 0px 50px 0px;
   background-color: white;
 
+  @include phones {
+    padding: 50px 0px 50px 0px;
+  }
+
   &__container {
     display: flex;
     justify-content: flex-end;
-
+    
+    @include phones {
+      flex-direction: column;
+    }
   
   }
 
@@ -39,6 +62,13 @@
     height: 400px;
     background-repeat: no-repeat;
     background-position: left -30px bottom;
+
+    @include phones {
+      width: 350px;
+      height: 200px;
+      background-position: top center;
+      margin-bottom: 50px;
+    }
   }
 
   &__pic {
@@ -54,6 +84,10 @@
 
     &:last-child {
       margin-bottom: 0;
+    }
+
+    @include phones {
+      width: 100%;
     }
   }
 
@@ -74,10 +108,17 @@
       width: 20px;
       height: 15px;
       display: block;
-      background: url('./pictures/li.png');
+      background: url('./pictures/li.png') no-repeat;
       position: absolute;
       top: 5px;
       left:  -30px;
+
+      @include phones {
+        width: 20px;
+        height: 20px;
+        top: 5px;
+        left:  -30px;
+      }
 
 
     }
@@ -96,5 +137,9 @@
     font-size: 20px;
     font-weight: 300;
     width: 50%;
+
+    @include phones {
+      width: 100%;
+    }
   }
 }
