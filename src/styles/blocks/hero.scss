@@ -193,6 +193,11 @@
     height: 482px;
     width: 655px;
     position: relative;
+
+    @include phones {
+      height: 19.125rem;
+      width: 27.9375rem;
+    }
   }
 
   &--check {
@@ -281,6 +286,10 @@
   &--reporting {
     position: absolute;
     left: 3%;
+
+    @include phones {
+      left: 0;
+    }
   }
 }
 
@@ -447,6 +456,27 @@
   }
 
   &--check {
+    .hero__container {
+      @include tablets {
+        padding-top: 46px;
+        flex-direction: column;
+      }
+    }
+
+    .hero__content {
+      @include tablets {
+        width: 70%;
+        margin-bottom: 15px;
+      }
+
+      @include phones {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  &--reporting {
     .hero__container {
       @include tablets {
         padding-top: 46px;
