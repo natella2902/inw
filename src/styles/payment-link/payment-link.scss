@@ -1,6 +1,7 @@
 .wrapper--link {
   background-color: #c4d4b2;
   color: black;
+
 }
 
 .link {
@@ -10,6 +11,11 @@
     background-position: center right;
     width: 620px;
     height: 460px;
+
+    @include phones {
+      width: 300px;
+      height: 230px;
+    }
   }
 
   &-hero__pic {
@@ -19,6 +25,16 @@
 
   &-hero__content {
     width: 45%;
+
+    @include tablets {
+      width: 80%;
+    }
+
+    @include phones {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  
   }
 }
 
@@ -26,9 +42,22 @@
   padding: 140px 0px 0px 0px;
   background-color: white;
 
+  @include tablets {
+    padding: 50px;
+  }
+
+  @include phones {
+    padding: 50px 0 50px 0;
+  }
+
   &__container {
     display: flex;
     justify-content: flex-end;
+
+    @include phones {
+      flex-direction: column;
+      align-items: flex-end;
+    }
   }
 
   &__img {
@@ -40,6 +69,10 @@
     width: 204px;
     height: 233px;
     align-self: center;
+
+    @include phones {
+     align-self: flex-start; 
+    }
   }
 
   &__img-2 {
@@ -66,5 +99,14 @@
     font-weight: 300;
     width: 54%;
     margin: 0 30px 0 50px;
+
+    @include tablets {
+      width: 75%;
+    }
+
+    @include phones {
+      width: 100%;
+      margin: 0;
+    }
   }
 }
