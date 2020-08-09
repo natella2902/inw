@@ -2,9 +2,25 @@
   background-color: $colorDustyBlue;
   padding: 74px 0px 105px 0px;
 
+  @media screen and (max-width: 890px) {
+    padding-top: 5.125rem;
+    padding-bottom: 4.125rem;
+  }
+
+  @include phones {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
   &__container {
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: 890px) {
+      flex-direction: column-reverse;
+      align-items: center;
+      max-width: 90%;
+    }
   }
 
   &__img {
@@ -13,6 +29,12 @@
     flex: 1;
     margin-right: 25px;
     position: relative;
+
+    @media screen and (max-width: 890px) {
+      margin-right: 0;
+      min-width: 400px;
+      min-height: 600px;
+    }
   }
 
   &__info {
@@ -24,6 +46,11 @@
     height: 100%;
     position: absolute;
     left: -5%;
+
+    @media screen and (max-width: 890px) {
+      top: 0;
+      left: 0;
+    }
   }
 
   &__subtitle {
@@ -34,5 +61,9 @@
   &__desc {
     font-size: 24px;
     font-weight: 300;
+
+    @media screen and (max-width: 890px) {
+      margin-bottom: 20px;
+    }
   }
 }

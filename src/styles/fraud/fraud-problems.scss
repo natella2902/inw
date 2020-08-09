@@ -5,6 +5,14 @@
     display: flex;
     flex-direction: column;
 
+    @include tablets {
+      max-width: 90%;
+    }
+
+    @include phones {
+      max-width: 100%;
+    }
+
   }
 
   &__subtitle {
@@ -18,15 +26,34 @@
 
     &--first {
       align-items: center;
+
+      @include tablets {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+      }
     }
 
     &:last-child {
       margin-bottom: 0;
+
+      @media screen and (max-width: 710px) {
+        .fraud-problems__item:last-child {
+          border: none;
+          margin-bottom: 0;
+          padding-bottom: 0;
+        }
+      }
     }
 
     &--middle {
       margin-bottom: 40px;
+
+      @media screen and (max-width: 710px) {
+        margin-bottom: 0;
+      }
     }
+
   }
 
   &__intro {
@@ -37,8 +64,12 @@
     width: 455px;
     height: 366px;
     margin-right: 25px;
-    flex: 1;
     position: relative;
+
+    @include tablets {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
   }
 
   &__pic {
@@ -47,6 +78,11 @@
     position: absolute;
     top: 7%;
     left: -3%;
+
+    @include tablets {
+      top: -2%;
+      left: 0;
+    }
   }
 
   &__desc {
@@ -63,11 +99,22 @@
   &__list {
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: 710px) {
+      flex-wrap: wrap;
+    }
   }
 
   &__item {
     margin-right: 50px;
     flex: 1;
+
+    @media screen and (max-width: 710px) {
+      margin-right: 0;
+      min-width: 400px;
+      padding-bottom: 1.8125rem;
+      border-bottom: dotted 1px rgba(89, 126, 150, 0.3);
+    }
 
     &:last-child {
       margin-right: 0;
