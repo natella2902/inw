@@ -6,21 +6,46 @@
   background-repeat: no-repeat;
   padding-bottom: 70px;
 
+  @media screen and (max-width: 940px) {
+    background-image: none;
+    padding-top: 70px;
+  }
+
   &__container {
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: 940px) {
+      max-width: 90%;
+      flex-direction: column;
+    }
   }
 
   &__img {
-    width: 560px;
-    height: 300px;
-    flex: 1;
+    width: 630px;
+    height: 420px;
+    display: none;
+
+    @media screen and (max-width: 940px) {
+      display: block;
+    }
+
+    @include phones {
+      width: 26.375rem;
+      height: 18.25rem;
+    }
   }
 
   &__info {
     flex: 1;
     margin-right: 90px;
     max-width: 350px;
+
+    @media screen and (max-width: 940px) {
+      margin-right: 0;
+      margin-bottom: 40px;
+      max-width: 100%;
+    }
   }
 
   &__pic {
