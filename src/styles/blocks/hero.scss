@@ -215,6 +215,10 @@
     position: absolute;
     top: 21%;
     transform: scale(-1, 1);
+
+    @include phones {
+      right: -15%;
+    }
   }
 
   &--payment {
@@ -291,6 +295,15 @@
     background-position: 95% 0%;
     background-repeat: no-repeat;
 
+    @include tablets {
+      background-position: 50% 58%;
+    }
+
+    @include phones {
+      background-size: 100%;
+      background-position: 0% 65%;
+    }
+
   }
 }
 
@@ -303,5 +316,28 @@
 .hero--payment {
   .title {
     margin-bottom: 30px;
+  }
+}
+
+.hero {
+  &--global {
+    .hero__container {
+      @include tablets {
+        padding-top: 46px;
+        flex-direction: column;
+      }
+    }
+
+    .hero__content {
+      @include tablets {
+        width: 70%;
+        margin-bottom: 15px;
+      }
+
+      @include phones {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+    }
   }
 }

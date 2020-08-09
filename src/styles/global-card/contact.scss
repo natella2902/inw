@@ -121,6 +121,7 @@
     @include tablets {
       padding: 15px 15px 0px 15px;
       flex-direction: column-reverse;
+      align-items: center;
     }
   }
 
@@ -145,8 +146,7 @@
     align-items: flex-start;
 
     @include tablets {
-      width: 50%;
-      align-self: flex-start;
+      width: 70%;
     }
 
     @media screen and (max-width: 500px) {
@@ -157,4 +157,5 @@
   &__subtitle {
     line-height: 1.15;
   }
+
 }

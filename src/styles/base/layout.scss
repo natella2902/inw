@@ -44,7 +44,7 @@ body {
   //background-repeat: no-repeat;
   color: $colorWhite;
   overflow: hidden;
-  
+
 
   @media screen and (max-width: 768px) {
     background-image: none;
@@ -111,7 +111,7 @@ body {
   width: 100%;
   // border: 1px solid blue;
   position: relative;
-  
+
 
   &--main {
     background-image: url("./pictures/logotype-huge.png");
@@ -223,7 +223,15 @@ table {
 
   @include tablets {
     min-height: initial;
+    margin: 0 auto;
+    max-width: 90%;
   }
+
+  @include phones {
+    max-width: 100%;
+  }
+
+
 
 }
 
@@ -241,8 +249,8 @@ table {
   }
 
   @include phones {
-    max-width: 370px;
-    width: 95%;
+    max-width: 460px;
+    width: 90%;
   }
 
 }
