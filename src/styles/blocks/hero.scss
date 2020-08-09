@@ -8,6 +8,10 @@
     position: relative;
     padding-bottom: 70px;
 
+    @include phones {
+      padding-bottom: 0;
+    }
+
     @include tablets {
       flex-direction: column-reverse;
       justify-content: flex-start;
@@ -161,6 +165,11 @@
     height: 558px;
     width: 535px;
     position: relative;
+
+    @include phones {
+      height: 21.875rem;
+      width: 26.4375rem;
+    }
   }
 
   &--omni {
@@ -217,6 +226,7 @@
     transform: scale(-1, 1);
 
     @include phones {
+      top: 15%;
       right: -15%;
     }
   }
@@ -321,6 +331,27 @@
 
 .hero {
   &--global {
+    .hero__container {
+      @include tablets {
+        padding-top: 46px;
+        flex-direction: column;
+      }
+    }
+
+    .hero__content {
+      @include tablets {
+        width: 70%;
+        margin-bottom: 15px;
+      }
+
+      @include phones {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  &--payment {
     .hero__container {
       @include tablets {
         padding-top: 46px;

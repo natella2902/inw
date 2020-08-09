@@ -8,13 +8,11 @@
     flex-direction: column;
 
     @include tablets {
-      padding-left: 30px;
-      padding-right: 30px;
+      max-width: 90%;
     }
 
     @include phones {
-      padding-left: 0;
-      padding-right: 0;
+      max-width: 100%;
     }
 
   }
