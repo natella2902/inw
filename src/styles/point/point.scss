@@ -4,6 +4,21 @@
 }
 
 .point-hero {
+
+  &__content {
+    width: 45%;
+
+    @include tablets {
+      width: 80%;
+
+    }
+
+    @include phones {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+  }
+
   &__img {
     background-image: url('./images/icons/pos-hero.svg');
     background-repeat: no-repeat;
@@ -17,6 +32,7 @@
     }
   }
 
+  
   &__pic {
     width: 100%;
     height: 100%;
@@ -29,6 +45,10 @@
   background-size: 500px 500px;
   background-repeat: no-repeat;
   background-position: left center;
+
+  @include tablets {
+    padding: 50px;
+  }
 
 
   &__container {
@@ -52,6 +72,10 @@
     height: 490px;
     flex: 1;
     margin-right: 70px;
+
+    @include tablets {
+      margin-right: 40px;
+    }
 
     @include phones {
      width: 270px;
