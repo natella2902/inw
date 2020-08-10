@@ -27,7 +27,6 @@
       width: 100%;
       min-width: 500px;
 
-
       @include phones {
         font-size: 38px;
         min-width: 100%;
@@ -47,6 +46,7 @@
       @include tablets {
         padding: 15px 15px 0px 15px;
         flex-direction: column-reverse;
+        align-items: center;
       }
 
       .contact__pic {
@@ -76,7 +76,7 @@
 
         @include tablets {
           width: 50%;
-          align-self: flex-start;
+          align-self: center;
         }
 
         @media screen and (max-width: 500px) {
@@ -122,6 +122,12 @@
     background-position: right -5% bottom -20px;
     background-size: 700px 450px;
 
+    & .about__desc {
+      @include tablets {
+        padding-bottom: 380px
+      }
+    }
+
     @include phones {
       background-size: 320px 200px;
     }
@@ -135,6 +141,12 @@
     background-position: right -5% bottom -20px;
     background-size: 480px 560px;
 
+    & .about__desc {
+      @include tablets {
+        padding-bottom: 400px
+      }
+    }
+
     @include phones {
       background-size: 200px 260px;
     }
@@ -146,6 +158,11 @@
     background-repeat: no-repeat;
     background-position: right -7% bottom -25%;
     background-size: 730px 680px;
+
+    @include tablets {
+      padding-bottom: 500px;
+      background-position: right -30px bottom;
+    }
 
     @include phones {
       background-size: 330px 320px;
@@ -262,6 +279,7 @@
     @include tablets {
       width: 100%;
       padding: 0px 50px;
+      
     }
   }
 
@@ -285,8 +303,6 @@
         margin-bottom: 20px;
         margin-top: 20px;
       }
-
-
 
 
     }
@@ -524,3 +540,5 @@
 .about__text {
   padding: 0 15px 0 0;
 }
+
+

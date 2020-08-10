@@ -588,15 +588,12 @@ body {
         justify-content: flex-start; } }
   .hero__content {
     width: 46%; }
+    @media screen and (max-width: 768px) {
+      .hero__content {
+        width: 80%; } }
   .hero__img {
     width: 33.75rem;
     height: 35.125rem; }
-  .hero__pic {
-    width: 100%;
-    height: 100%; }
-  @media screen and (max-width: 768px) {
-    .hero__content {
-      width: 100%; } }
   .hero__pic {
     width: 100%;
     height: 100%;
@@ -1316,7 +1313,8 @@ body {
       @media screen and (max-width: 768px) {
         .about__container--bottom {
           padding: 0.9375rem 0.9375rem 0rem 0.9375rem;
-          flex-direction: column-reverse; } }
+          flex-direction: column-reverse;
+          align-items: center; } }
       .about__container--bottom .contact__pic {
         background-image: url("./images/icons/start-illu-1.svg");
         background-repeat: no-repeat;
@@ -1337,7 +1335,7 @@ body {
         @media screen and (max-width: 768px) {
           .about__container--bottom .contact__desc {
             width: 50%;
-            align-self: flex-start; } }
+            align-self: center; } }
         @media screen and (max-width: 500px) {
           .about__container--bottom .contact__desc {
             width: 90%; } }
@@ -1365,6 +1363,9 @@ body {
     background-repeat: no-repeat;
     background-position: right -5% bottom -1.25rem;
     background-size: 43.75rem 28.125rem; }
+    @media screen and (max-width: 768px) {
+      .about__item-1 .about__desc {
+        padding-bottom: 23.75rem; } }
     @media screen and (max-width: 480px) {
       .about__item-1 {
         background-size: 20rem 12.5rem; } }
@@ -1374,6 +1375,9 @@ body {
     background-repeat: no-repeat;
     background-position: right -5% bottom -1.25rem;
     background-size: 30rem 35rem; }
+    @media screen and (max-width: 768px) {
+      .about__item-2 .about__desc {
+        padding-bottom: 25rem; } }
     @media screen and (max-width: 480px) {
       .about__item-2 {
         background-size: 12.5rem 16.25rem; } }
@@ -1383,6 +1387,10 @@ body {
     background-repeat: no-repeat;
     background-position: right -7% bottom -25%;
     background-size: 45.625rem 42.5rem; }
+    @media screen and (max-width: 768px) {
+      .about__item-3 {
+        padding-bottom: 31.25rem;
+        background-position: right -1.875rem bottom; } }
     @media screen and (max-width: 480px) {
       .about__item-3 {
         background-size: 20.625rem 20rem;
