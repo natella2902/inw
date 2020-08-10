@@ -2,6 +2,10 @@
   position: relative;
   min-height: 100vh;
 
+  @include tablets {
+    min-height: 700px;
+  }
+
   &__container {
     display: flex;
     justify-content: space-between;
@@ -199,7 +203,7 @@
 
   &--check {
     height: 493px;
-    width: 978px;
+    width: 36.125rem;
     position: relative;
 
     @include tablets {
@@ -208,8 +212,8 @@
     }
 
     @include phones {
-      height: 13.5625rem;
-      width: 25.125rem;
+      height: 18.5625rem;
+      width: 31.125rem;
     }
   }
 
@@ -278,8 +282,10 @@
   &--check {
     position: absolute;
     left: 20%;
+    display: none;
 
     @include tablets {
+      display: block;
       left: 0;
       margin-top: 20px;
     }
@@ -474,6 +480,16 @@
   }
 
   &--check {
+    background-image: url("./images/icons/checkout-illu.svg");
+    background-size: 53%;
+    background-position-x: 100%;
+    background-position-y: 45%;
+    background-repeat: no-repeat;
+
+    @include tablets {
+      background-image: none;
+    }
+
     .hero__container {
       @include tablets {
         padding-top: 46px;
