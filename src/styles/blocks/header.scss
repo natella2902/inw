@@ -32,7 +32,7 @@
   }
 
   &__left {
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
   &__right {
@@ -44,6 +44,8 @@
   display: flex;
   width: 150px;
   height: 27px;
+
+  margin-right: 30px;
 
   @media screen and (max-width: 1250px) {
     margin-right: 20px;
