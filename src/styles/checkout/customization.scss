@@ -34,8 +34,10 @@
     left: -30%;
     width: 100%;
     height: 100%;
+    display: none;
 
     @media screen and (max-width: 980px) {
+      display: block;
       left: -10%;
     }
 
