@@ -71,6 +71,7 @@
   &__list {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
 
     @media screen and (max-width: 710px) {
       flex-direction: column;
@@ -87,8 +88,9 @@
 
     &-subtitle {
       font-size: 28px;
-      margin-top: 33px;
-      margin-bottom: 33px;
+      margin-top: 23px;
+      margin-bottom: 23px;
+      font-weight: 500;
       line-height: 30px;
     }
 
