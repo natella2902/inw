@@ -1,11 +1,20 @@
 .customization {
   background-color: $colorDustyBlue;
+  background-image: url("./pictures/checkout-mac.png");
+  background-size: 50%;
+  background-position: -20% 50%;
+  background-repeat: no-repeat;
+
+  @media screen and (max-width: 980px) {
+    background-image: none;
+  }
 
   &__container {
     display: flex;
     align-items: center;
 
     @media screen and (max-width: 980px) {
+      background-image: none;
       flex-direction: column;
       max-width: 90%;
       padding: 50px 0px;
@@ -15,8 +24,8 @@
 
   &__img {
     position: relative;
-    width: 686px;
-    min-width: 586px;
+    width: 486px;
+    min-width: 486px;
     height: 567px;
     margin-right: 10px;
 
