@@ -81,15 +81,20 @@
   }
 
   &__link {
-    max-width: 110px;
+    margin-right: 50px;
+    display: inline;
     font-size: 24px;
     font-weight: 300;
     color: $colorRed;
     border-bottom: 1px dotted $colorRed;
-    background-color: transparent;
     outline: none;
     cursor: pointer;
+    white-space: nowrap;
     position: relative;
+
+    &:last-child {
+      margin-right: 0;
+    }
 
     &:after {
       content: "\2192";
@@ -100,6 +105,7 @@
       top: 0;
       right: -25px;
     }
+
   }
 
 }

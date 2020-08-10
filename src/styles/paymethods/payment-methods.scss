@@ -1,9 +1,22 @@
 .payment-methods {
   padding-top: 92px;
 
+  @include tablets {
+    margin-bottom: 50px;
+  }
+
   &__container {
     display: flex;
     flex-direction: column;
+
+    @include tablets {
+      max-width: 90%;
+    }
+
+    @media screen and (max-width: 580px) {
+      width: 100%;
+      align-items: flex-start;
+    }
   }
 
   &__subtext {
@@ -20,6 +33,10 @@
   &__america {
     display: flex;
     flex-direction: column;
+
+    @media screen and (max-width: 580px) {
+      width: 90%;
+    }
   }
 
   &__europe {
@@ -32,6 +49,12 @@
 
   &__row {
     margin-bottom: 48px;
+
+    @media screen and (max-width: 580px) {
+      margin-left: 15px;
+      margin-bottom: 0;
+      width: 100%;
+    }
 
     &:last-child {
       margin-bottom: 0;
@@ -49,12 +72,22 @@
     display: flex;
     justify-content: space-between;
 
+    @media screen and (max-width: 580px) {
+      flex-direction: column;
+    }
+
   }
 
   &__item {
     flex: 1;
     padding-bottom: 45px;
     margin-right: 25px;
+
+    @media screen and (max-width: 580px) {
+      margin-right: 0;
+      width: 100%;
+      margin-bottom: 30px;
+    }
 
     &:last-child {
       margin-right: 0;

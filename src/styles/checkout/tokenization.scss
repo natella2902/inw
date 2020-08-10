@@ -43,6 +43,7 @@
   &__list {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
 
     @media screen and (max-width: 670px) {
       flex-direction: column;
@@ -59,8 +60,9 @@
 
     &-subtitle {
       font-size: 28px;
-      margin-top: 33px;
-      margin-bottom: 33px;
+      margin-top: 23px;
+      margin-bottom: 23px;
+      font-weight: 500;
       line-height: 30px;
     }
 
@@ -81,7 +83,7 @@
   &__info {
     font-size: 20px;
     font-weight: 300;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
   }
 
   &__img--1 {
@@ -101,18 +103,19 @@
 
 
   &__link {
+    margin-right: 50px;
+    display: inline;
     font-size: 20px;
     font-weight: 300;
     color: $colorRed;
     border-bottom: 1px dotted $colorRed;
-    background-color: transparent;
     outline: none;
     cursor: pointer;
+    white-space: nowrap;
     position: relative;
-    max-width: 300px;
 
-    @include phones {
-      max-width: 260px;
+    &:last-child {
+      margin-right: 0;
     }
 
     &:after {
@@ -124,5 +127,6 @@
       top: 0;
       right: -25px;
     }
+
   }
 }

@@ -1,5 +1,10 @@
 .hero {
   position: relative;
+  min-height: 100vh;
+
+  @include tablets {
+    min-height: 700px;
+  }
 
   &__container {
     display: flex;
@@ -29,10 +34,6 @@
   &__img {
     width: 540px;
     height: 562px;
-
-    @include tablets {
-      margin-bottom: 54px;
-    }
 
   }
 
@@ -195,7 +196,7 @@
 
   &--check {
     height: 493px;
-    width: 978px;
+    width: 36.125rem;
     position: relative;
 
     @include tablets {
@@ -204,13 +205,12 @@
     }
 
     @include phones {
-      height: 13.5625rem;
-      width: 25.125rem;
+      height: 18.5625rem;
+      width: 31.125rem;
     }
   }
 
   &--contact-us {
-    flex: 1;
     height: 411px;
     width: 509px;
     position: relative;
@@ -226,7 +226,7 @@
     top: 6%;
     left: -9%;
 
-    @include phones {
+    @include tablets {
       left: 0;
     }
   }
@@ -235,6 +235,10 @@
     position: absolute;
     left: 9%;
     top: -2%;
+
+    @include tablets {
+      top: 3%;
+    }
   }
 
   &--global {
@@ -251,6 +255,11 @@
   &--payment {
     position: absolute;
     top: 2%;
+    left: 5%;
+
+    @include tablets {
+      left: 0;
+    }
   }
 
   &--omni {
@@ -266,9 +275,12 @@
   &--check {
     position: absolute;
     left: 20%;
+    display: none;
 
     @include tablets {
-      left: -5%;
+      display: block;
+      left: 0;
+      margin-top: 20px;
     }
 
     @include phones {
@@ -300,6 +312,10 @@
     .hero__container {
       padding-bottom: 0;
     }
+
+    @include tablets {
+      margin-bottom: 0;
+    }
   }
 
   &--paymethods {
@@ -310,6 +326,10 @@
     background-size: 40%, 40%;
     margin-bottom: 10px;
 
+    @media screen and (max-width: 940px) {
+      background-image: none;
+    }
+
     .hero__container {
       justify-content: center;
       text-align: center;
@@ -319,6 +339,10 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+
+      @media screen and (max-width: 940px) {
+        width: 100%;
+      }
     }
 
     .hero__subtitle {
@@ -449,6 +473,16 @@
   }
 
   &--check {
+    background-image: url("./images/icons/checkout-illu.svg");
+    background-size: 53%;
+    background-position-x: 100%;
+    background-position-y: 45%;
+    background-repeat: no-repeat;
+
+    @include tablets {
+      background-image: none;
+    }
+
     .hero__container {
       @include tablets {
         padding-top: 46px;
@@ -470,6 +504,27 @@
   }
 
   &--reporting {
+    .hero__container {
+      @include tablets {
+        padding-top: 46px;
+        flex-direction: column;
+      }
+    }
+
+    .hero__content {
+      @include tablets {
+        width: 70%;
+        margin-bottom: 15px;
+      }
+
+      @include phones {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  &--contact-us {
     .hero__container {
       @include tablets {
         padding-top: 46px;

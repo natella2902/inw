@@ -23,6 +23,7 @@
   &__desc {
     font-size: 20px;
     font-weight: 300;
+    margin-bottom: 15px;
   }
 
   &__item {
@@ -37,6 +38,7 @@
       font-size: 28px;
       margin-bottom: 33px;
       line-height: 30px;
+      font-weight: 500;
     }
 
     @media screen and (max-width: 690px) {
@@ -46,16 +48,20 @@
   }
 
   &__link {
-    margin-top: 14px;
+    margin-right: 50px;
+    display: inline;
     font-size: 20px;
     font-weight: 300;
     color: $colorRed;
     border-bottom: 1px dotted $colorRed;
-    background-color: transparent;
     outline: none;
     cursor: pointer;
+    white-space: nowrap;
     position: relative;
-    max-width: 120px;
+
+    &:last-child {
+      margin-right: 0;
+    }
 
     &:after {
       content: "\2192";
@@ -66,5 +72,6 @@
       top: 0;
       right: -25px;
     }
+
   }
 }
