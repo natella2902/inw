@@ -1,10 +1,26 @@
 .point-transactions {
 
   background-color: white;
+  background-image: url('./pictures/pos-ipad.png');
+  background-position: center right -100px;
+  background-repeat: no-repeat;
+  background-size: 860px 660px;
+  position: relative;
 
   @include tablets {
     padding: 50px;
+    background-position: center bottom;
+  
   }
+
+
+  @include phones {
+    background-size: 430px 330px;
+    background-position: center bottom;
+    padding: 0px 0 0px 0;
+    padding-bottom: 50px;
+  }
+
 
   &__container {
     display: flex;
@@ -15,26 +31,24 @@
     }
   }
 
-  &__img {
-    width: 860px;
-    height: 660px;
-
-    @include phones {
-      width: 430px;
-      height: 330px;
-    }
-  }
-
-  &__pic {
-    height: 100%;
-    width: 100%;
-  }
 
   &__info {
-    width: 50%;
+    width: 35%;
+    max-width: 300px;
+
+    margin-right: 60px;
+
+    @include tablets {
+      width: 80%;
+      max-width: 100%;
+      margin-bottom: 650px;
+    }
 
     @include phones {
       width: 100%;
+      max-width: 100%;
+      margin-right: 0;
+      margin-bottom: 300px;
     }
   }
 
@@ -69,6 +83,48 @@
       top: 0;
       right: -25px;
     }
+  }
+
+  &__list {
+    position: absolute;
+    top: 105px;
+    bottom: 0;
+    right: 480px;
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+
+    @include tablets {
+      display: none;
+    }
+
+    @include phones {
+      position: relative;
+      top: 0;
+      right: 0;
+      max-width: 100%;
+
+    }
+  }
+
+  &__item {
+    margin-bottom: 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__sub {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 22px;
+  }
+
+  &__text {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
   }
 
 }

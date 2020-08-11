@@ -2,6 +2,7 @@
   min-height: 450px;
   background-color: white;
 
+
   &__container {
     flex-direction: row;
     justify-content: space-between;
@@ -13,7 +14,7 @@
     }
 
     @include phones {
-      padding: 0;
+      padding: 50px 0 0 0;
     }
   }
 
