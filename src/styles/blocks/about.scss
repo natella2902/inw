@@ -152,8 +152,9 @@
     background-image: url('./images/icons/pos-illu.svg');
     background-repeat: no-repeat;
     background-position: right -5% bottom -10px;
-    background-size: 13.5rem 16.25rem;
-
+    background-size: 470px 550px;
+   
+   
     & .about__desc {
       @include tablets {
         padding-bottom: 400px
@@ -162,6 +163,7 @@
 
       @include phones {
         padding-bottom: 0;
+        background-size: 13.5rem 16.25rem;     
       }
     }
 
