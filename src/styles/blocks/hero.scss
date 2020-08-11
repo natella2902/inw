@@ -59,6 +59,7 @@
       padding: 0;
     }
 
+
   }
 }
 
@@ -141,6 +142,19 @@
 }
 
 .hero--main {
+
+  .hero__container {
+    @include phones {
+      padding-bottom: 35px;
+    }
+  }
+
+  .hero__content {
+    @include phones {
+      padding-top: 35px;
+    }
+  }
+
   .hero__img {
     @include tablets {
       background-image: url("./pictures/logotype-huge.png");
@@ -449,6 +463,10 @@
         flex-direction: column;
         padding-bottom: 0;
       }
+
+      @include phones {
+        padding-bottom: 70px;
+      }
     }
 
     .hero__content {
@@ -466,9 +484,14 @@
 
   &--fraud {
     .hero__container {
+
       @include tablets {
         padding-top: 46px;
         flex-direction: column;
+      }
+
+      @include phones {
+        padding-bottom: 70px;
       }
     }
 
