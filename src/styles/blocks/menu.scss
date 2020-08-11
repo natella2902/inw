@@ -74,6 +74,7 @@
     display: inline-block;
     transition: all .2s ease;
 
+
     &:first-of-type {
       left: 0;
       transform: rotate(45deg);
@@ -95,6 +96,7 @@
     display: block;
     position: relative;
   }
+
 
   #menu__toggle {
     position: relative;
@@ -126,6 +128,13 @@
     background-color: $colorWhite;
     transition-duration: .25s;
   }
+
+  .menu__btn--bright-bg>span,
+  .menu__btn--bright-bg>span::before,
+  .menu__btn--bright-bg>span::after {
+    background-color: #101820;
+  }
+
 
   .menu__btn>span::before {
     content: '';

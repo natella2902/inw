@@ -1189,6 +1189,10 @@ body {
     height: 0.125rem;
     background-color: #fff;
     transition-duration: .25s; }
+  .menu__button .menu__btn--bright-bg > span,
+  .menu__button .menu__btn--bright-bg > span::before,
+  .menu__button .menu__btn--bright-bg > span::after {
+    background-color: #101820; }
   .menu__button .menu__btn > span::before {
     content: '';
     top: -0.5rem; }
