@@ -166,7 +166,7 @@
     background-color: #d1f1fc;
     background-image: url('./images/icons/methods-illu-artboard.svg');
     background-repeat: no-repeat;
-    background-position: right -7% bottom -25%;
+    background-position: right bottom 50px;
     background-size: 730px 680px;
 
     @include tablets {
@@ -294,7 +294,7 @@
   &__desc {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 45%;
     padding-left: 100px;
     align-items: flex-start;
 
@@ -476,7 +476,6 @@
   }
 
   &__features {
-    flex: 1;
     display: flex;
     justify-content: space-between;
 
@@ -488,6 +487,7 @@
 
   &__feature {
     display: flex;
+    flex: 1;
     flex-direction: column;
     justify-content: space-between;
     ;
