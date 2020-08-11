@@ -10,6 +10,7 @@
   @include phones {
     padding: 0 0 0 30px;
     min-height: 650px;
+    padding-bottom: 50px;
   }
 
   &__container {
@@ -17,6 +18,12 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+  }
+
+  .subtitle {
+    @include phones {
+      align-self: flex-start;
+    }
   }
 
   &__row {
@@ -59,7 +66,7 @@
       @include phones {
         width: 1px;
         height: 430px;
-        top: 32%;
+        top: 28%;
         left: 40px;
       }
     }

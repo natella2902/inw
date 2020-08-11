@@ -8,7 +8,7 @@
     align-items: flex-end;
 
     @include tablets {
-      padding: 15px 15px 0px 15px;
+      padding: 15px 15px 0px 0px;
       flex-direction: column-reverse;
     }
   }
@@ -30,8 +30,8 @@
     height: 450px;
 
     @include phones {
-      width: 333px;
-      height: 269px;
+      width: 24.8125rem;
+      height: 20.8125rem;
     }
   }
 
