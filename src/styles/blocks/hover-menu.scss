@@ -5,7 +5,7 @@
 .hover-menu {
   position: absolute;
   top: 65px;
-  left: -50px;
+  left: -100px;
   right: 0;
   display: flex;
   justify-content: space-between;
@@ -19,6 +19,15 @@
 
   z-index: 10;
 
+  @include tablets {
+    display: none;
+    top: -40px;
+    left: 150px;
+    right: 0px;
+    width: 300px;
+    height: 1000px;
+  }
+
   &__container {
     padding: 45px 50px 60px 50px;
     display: flex;
@@ -29,6 +38,11 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+
+    @include tablets {
+      flex-direction: column;
+      justify-content: flex-start;
+    }
   }
 
   &__category {
@@ -65,7 +79,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include tablets {
+      display: none;
+    }
   }
+
+ 
 }
 
 .menu__list:hover+.hover-menu {
