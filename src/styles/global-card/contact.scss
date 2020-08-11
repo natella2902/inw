@@ -123,6 +123,10 @@
       flex-direction: column-reverse;
       align-items: center;
     }
+
+    @include phones {
+      padding: 15px 0px 0px 0px;
+    }
   }
 
   &__pic {
@@ -159,6 +163,10 @@
 
     @media screen and (max-width: 500px) {
       width: 90%;
+    }
+
+    @include phones {
+      align-self: flex-start;
     }
   }
 
