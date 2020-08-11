@@ -273,6 +273,7 @@ table {
 
   @include phones {
     font-size: 38px;
+    line-height: 45px;
   }
 }
 
@@ -281,7 +282,7 @@ table {
 .btn {
   font-size: 18px;
   color: $colorDark;
-  padding: 15px 20px 15px 30px;
+  padding: 0.6375rem 1.25rem 0.8175rem 1.875rem;
   border: 1px solid $colorWhite;
   background-color: $colorWhite;
   white-space: nowrap;

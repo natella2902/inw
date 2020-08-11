@@ -18,11 +18,12 @@
   @include tablets {
     margin-left: 50px;
     margin-right: 50px;
-        
+
   }
 
-  
+
   @include phones {
+    min-height: 550px;
     background-position: bottom -60px left -150px;
     padding: 0;
     margin-left: 0;
@@ -33,13 +34,13 @@
 
   &__container {
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
     padding: 60px 0 0 50px;
-    
+
     @include tablets {
       padding: 20px 0 0 20px;
     }
-    
+
     @include phones {
       padding: 40px 0 0 0;
     }
@@ -49,13 +50,13 @@
   &__info {
     width: 50%;
     font-size: 20px;
-    line-height: 25px;
     font-weight: 300;
+    line-height: 1.5;
     margin-bottom: 30px;
 
     @include phones {
-      width: 100%;
-      margin-bottom: 320px;
+      width: 85%;
+      margin-bottom: 25rem;
     }
   }
 
@@ -67,7 +68,7 @@
 
     @include phones {
       width: 100%;
-      margin-bottom: 0;
+      margin-bottom: 25px;
     }
   }
 
