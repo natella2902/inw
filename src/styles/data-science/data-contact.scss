@@ -11,6 +11,11 @@
       padding: 15px 15px 0px 15px;
       flex-direction: column-reverse;
     }
+
+    @include phones {
+      padding: 0px;
+      padding-top: 15px;
+    }
   }
 
 
@@ -30,8 +35,8 @@
     height: 450px;
 
     @include phones {
-      width: 333px;
-      height: 269px;
+      width: 24.8125rem;
+      height: 19.8125rem;
     }
   }
 
