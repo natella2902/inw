@@ -1,13 +1,13 @@
 .data-getting {
   background-color: white;
 
-   
+
   @include tablets {
     padding: 50px 50px 50px 50px;
   }
 
   @include phones {
-    padding: 50px;
+    padding: 50px 0px;
   }
 
   &__container {
@@ -17,7 +17,7 @@
 
     @include tablets {
       flex-direction: column;
-  
+
     }
   }
 
@@ -40,7 +40,7 @@
     margin-bottom: 50px;
     line-height: 45px;
   }
-  
+
 
 
   &__info {

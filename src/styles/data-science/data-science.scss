@@ -27,8 +27,9 @@
     height: 412px;
 
     @include phones {
-      width: 300px;
-      height: 210px;
+      width: 22.75rem;
+      height: 15.125rem;
+      background-position: center;
     }
 
   }
@@ -68,11 +69,11 @@
   &__container {
     display: flex;
     justify-content: flex-end;
-    
+
     @include phones {
       flex-direction: column;
     }
-  
+
   }
 
   &__img {
@@ -83,9 +84,9 @@
     background-position: left -30px bottom;
 
     @include phones {
-      width: 350px;
-      height: 200px;
-      background-position: top center;
+      width: 34.375rem;
+      height: 15.5rem;
+      background-position: top left;
       margin-bottom: 50px;
     }
   }
@@ -130,7 +131,7 @@
       background: url('./pictures/li.png') no-repeat;
       position: absolute;
       top: 5px;
-      left:  -30px;
+      left: -30px;
 
       @include tablets {
         width: 20px;
@@ -141,12 +142,12 @@
         width: 20px;
         height: 20px;
         top: 5px;
-        left:  -30px;
+        left: -30px;
       }
 
 
     }
-    
+
   }
 
   &-subtitle {
