@@ -1,6 +1,6 @@
 const openBtn = document.querySelector('.app-menu__link');
 const menu = document.querySelector('.hover-menu');
-const openBurger = document.querySelector('.menu__button');
+const openBurger = document.querySelector('#menu__toggle');
 
 
 openBtn.addEventListener('mouseenter', function(e) {
@@ -14,11 +14,14 @@ menu.addEventListener('mouseleave', function() {
 });
 
 
-// openBurger.addEventListener('click', function(e) {
-//   e.preventDefault();
-//   menu.style["display"] = 'flex';
-//   console.log('!!!!!');
-// });
+openBurger.addEventListener('click', function(e) {
+  if (e.currentTarget.checked) {
+    menu.style["display"] = 'flex';
+  } else {
+    menu.style["display"] = 'none';
+  }
+  
+});
 
 
 
