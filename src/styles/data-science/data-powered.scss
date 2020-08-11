@@ -12,8 +12,8 @@
   background-position: bottom -100px right -150px;
   background-color: #df271c;
   color: white;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
 
   @include tablets {
     margin-left: 50px;
@@ -49,6 +49,7 @@
   &__info {
     width: 50%;
     font-size: 20px;
+    line-height: 25px;
     font-weight: 300;
     margin-bottom: 30px;
 
@@ -62,6 +63,7 @@
   &__subtitle {
     width: 50%;
     margin-bottom: 43px;
+    line-height: 45px;
 
     @include phones {
       width: 100%;

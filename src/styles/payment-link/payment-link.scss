@@ -5,6 +5,15 @@
 }
 
 .link {
+
+  @include phones {
+
+    &-hero__container {
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+  }
+
   &-hero__img {
     background-image: url('./images/icons/payment-link-illu.svg');
     background-repeat: no-repeat;
@@ -17,6 +26,8 @@
       height: 230px;
     }
   }
+
+
 
   &-hero__pic {
     width: 100%;

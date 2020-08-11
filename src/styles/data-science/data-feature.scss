@@ -53,6 +53,7 @@
       margin-top: 33px;
       margin-bottom: 33px;
       line-height: 30px;
+      font-weight: 500;
     }
   }
 
@@ -79,12 +80,14 @@
   &__info {
     font-size: 20px;
     font-weight: 300;
+    line-height: 30px;
   }
 
   &__link {
     max-width: 165px;
     font-size: 18px;
     font-weight: 300;
+    line-height: 30px;
     color: $colorRed;
     border-bottom: 1px dotted $colorRed;
     background-color: transparent;

@@ -10,6 +10,15 @@
 }
 
 .data-hero {
+
+  @include phones {
+
+    &__container {
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+  }
+
   &__img {
     background-image: url('./images/icons/data-science-illu.svg');
     background-repeat: no-repeat;

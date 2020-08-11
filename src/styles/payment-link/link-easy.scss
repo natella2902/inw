@@ -4,7 +4,7 @@ background-color: white;
 min-height: 500px;
 
   @include tablets {
-    padding: 50px 50px 50px 50px;
+    padding: 100px 50px 50px 50px;
   }
 
   @include phones {
@@ -31,7 +31,9 @@ min-height: 500px;
     font-size: 20px;
     font-weight: 300;
     margin-bottom: 30px;
+    line-height: 30px;
     display: flex;
+    justify-content: space-between;
 
     @include phones {
       flex-direction: column;
@@ -40,9 +42,28 @@ min-height: 500px;
 
   }
 
+  &__item {
+    width: 46%;
+
+    @include phones {
+      width: 100%;
+
+      margin-bottom: 50px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
 
   &__subtitle {
     margin-bottom: 43px;
+    line-height: 45px;
+    
+    @include phones {
+      margin-bottom: 20px;
+    }
   }
 
   &__link {

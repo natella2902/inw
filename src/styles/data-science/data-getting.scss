@@ -35,11 +35,10 @@
     height: 400px;
   }
 
-  &-subtitle {
-    font-size: 28px;
+  &__subtitle {
     margin-top: 33px;
     margin-bottom: 50px;
-    line-height: 30px;
+    line-height: 45px;
   }
   
 
@@ -47,7 +46,8 @@
   &__info {
     font-size: 20px;
     font-weight: 300;
-    width: 45%;
+    width: 37%;
+    line-height: 30px;
 
     @include tablets {
       width: 100%;
