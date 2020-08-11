@@ -20,7 +20,7 @@
   z-index: 10;
 
   @include tablets {
-    top: 80px;
+    top: 75px;
     left: 0;
     right: 0;
     width: 100vw;
@@ -51,6 +51,7 @@
 
   &__container-tab {
     flex-direction: column;
+    padding: 45px 0px 60px 26px;
 
     @include phones {
       padding-top: 20px;
@@ -83,6 +84,10 @@
       line-height: 32px;
       font-size: 19px;
       margin-top: 20px;
+
+      &:first-child {
+        margin-top: 0;
+      }
     }
   }
 

@@ -16,7 +16,7 @@
     }
 
     @include phones {
-      font-size: 2.375rem;
+      font-size: 2.9rem;
       margin: 45px 0 25px;
     }
 
@@ -30,7 +30,7 @@
 
 
       @include phones {
-        font-size: 38px;
+        font-size: 2.9rem;
         min-width: 100%;
       }
     }
@@ -48,6 +48,10 @@
       @include tablets {
         padding: 15px 15px 0px 15px;
         flex-direction: column-reverse;
+      }
+
+      @include phones {
+        padding: 15px 0px 0px 0px;
       }
 
       .contact__pic {
@@ -82,6 +86,10 @@
 
         @media screen and (max-width: 500px) {
           width: 90%;
+        }
+
+        @include phones {
+          align-self: flex-start;
         }
 
 
@@ -315,7 +323,7 @@
     line-height: 46.01px;
 
     @include phones {
-      font-size: 32px;
+      font-size: 2.47rem;
     }
 
 
@@ -326,6 +334,7 @@
       line-height: 30px;
 
       @media screen and (max-width: 750px) {
+        font-size: 1.7rem;
         margin-bottom: 20px;
         margin-top: 20px;
       }
