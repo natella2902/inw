@@ -67,10 +67,18 @@
     outline: none;
     cursor: pointer;
     white-space: nowrap;
+
+    @include phones {
+      font-size: 1.5rem;
+    }
   }
 
   &__desc {
     margin-bottom: 35px;
+
+    @include phones {
+      font-size: 1.5rem;
+    }
   }
 
 }

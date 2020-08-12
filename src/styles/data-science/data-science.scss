@@ -111,6 +111,12 @@
     }
   }
 
+  &__desc {
+    @include phones {
+      font-size: 1.5rem;
+    }
+  }
+
   &__list {
     display: flex;
     justify-content: space-between;

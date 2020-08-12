@@ -59,6 +59,11 @@
       margin-bottom: 23px;
       line-height: 30px;
       font-weight: 500;
+
+      @include phones {
+        font-size: 2rem;
+        line-height: 2.4rem;
+      }
     }
   }
 
@@ -87,6 +92,10 @@
     font-weight: 300;
     line-height: 30px;
     margin-bottom: 15px;
+
+    @include phones {
+      font-size: 1.3rem;
+    }
   }
 
   &__link {
