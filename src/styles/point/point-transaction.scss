@@ -113,11 +113,20 @@
     font-size: 28px;
     font-weight: 500;
     line-height: 22px;
+
+    @include phones {
+      font-size: 2rem;
+      line-height: 2.4rem;
+    }
   }
 
   &__text {
     font-size: 20px;
     font-weight: 300;
+
+    @include phones {
+      font-size: 1.3rem;
+    }
   }
 
 }

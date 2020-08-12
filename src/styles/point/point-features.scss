@@ -80,11 +80,16 @@
     }
 
     &-subtitle {
-      font-weight: 500;font-size: 28px;
+      font-weight: 500;
+      font-size: 28px;
       margin-top: 33px;
       margin-bottom: 33px;
       line-height: 30px;
 
+      @include phones {
+        font-size: 2rem;
+        line-height: 2.4rem;
+      }
 
     }
 
@@ -120,5 +125,9 @@
   &__info {
     font-size: 20px;
     font-weight: 300;
+
+    @include phones {
+      font-size: 1.3rem;
+    }
   }
 }
