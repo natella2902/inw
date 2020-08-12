@@ -46,6 +46,10 @@
   &__subtext {
     font-size: 20px;
     font-weight: 300;
+
+    @include phones {
+      font-size: 1.5rem;
+    }
   }
 
   &__row {
@@ -92,6 +96,11 @@
       margin-bottom: 23px;
       font-weight: 500;
       line-height: 30px;
+
+      @include phones {
+        font-size: 2rem;
+        line-height: 2.4rem;
+      }
     }
 
     @media screen and (max-width: 710px) {
@@ -106,6 +115,10 @@
     font-size: 20px;
     font-weight: 300;
     margin-bottom: 35px;
+
+    @include phones {
+      font-size: 1.3rem;
+    }
   }
 
   &__img--1 {

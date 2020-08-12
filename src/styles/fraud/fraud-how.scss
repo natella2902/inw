@@ -106,5 +106,9 @@
   &__desc {
     font-size: 22px;
     font-weight: 300;
+
+    @include phones {
+      font-size: 1.3rem;
+    }
   }
 }

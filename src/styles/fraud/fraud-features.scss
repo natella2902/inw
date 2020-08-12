@@ -80,6 +80,11 @@
       margin-bottom: 23px;
       line-height: 30px;
       font-weight: 500;
+
+      @include phones {
+        font-size: 2rem;
+        line-height: 2.4rem;
+      }
     }
 
     @media screen and (max-width: 630px) {
@@ -93,6 +98,10 @@
   &__info {
     font-size: 20px;
     font-weight: 300;
+
+    @include phones {
+      font-size: 1.3rem;
+    }
   }
 
   &__icon {

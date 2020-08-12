@@ -33,11 +33,19 @@
 
   &__subtitle {
     margin-bottom: 15px;
+
+    @include phones {
+      margin-bottom: 25px;
+    }
   }
 
   &__subtext {
     font-size: 20px;
     font-weight: 300;
+
+    @include phones {
+      font-size: 1.5rem;
+    }
   }
 
   &__list {
@@ -64,6 +72,11 @@
       margin-bottom: 23px;
       font-weight: 500;
       line-height: 30px;
+
+      @include phones {
+        font-size: 2rem;
+        line-height: 2.4rem;
+      }
     }
 
     @media screen and (max-width: 670px) {
@@ -84,6 +97,10 @@
     font-size: 20px;
     font-weight: 300;
     margin-bottom: 15px;
+
+    @include phones {
+      font-size: 1.3rem;
+    }
   }
 
   &__img--1 {
