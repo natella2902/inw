@@ -66,6 +66,18 @@
         border-bottom: 1px dotted #d6d6d6;
       }
     }
+
+    @include phones {
+      &:nth-of-type(2) {
+        .payment-methods__item {
+          border-bottom: 1px dotted #d6d6d6;
+
+          &:last-child {
+            border: none;
+          }
+        }
+      }
+    }
   }
 
   &__list {
@@ -83,6 +95,23 @@
     padding-bottom: 45px;
     margin-right: 25px;
 
+    &--desk {
+      display: block;
+
+      @include phones {
+        display: none;
+      }
+    }
+
+    &--mobile {
+      display: none;
+
+      @include phones {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
     @media screen and (max-width: 580px) {
       margin-right: 0;
       width: 100%;
@@ -91,6 +120,26 @@
 
     &:last-child {
       margin-right: 0;
+    }
+
+    &-content {
+
+      @include phones {
+        display: flex;
+        justify-content: flex-start;
+      }
+
+    }
+
+    &-col {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 100%;
+
+      &:first-child {
+        margin-right: 10px;
+      }
     }
 
     &-head,
@@ -127,6 +176,7 @@
     margin-right: 15px;
     width: 40px;
     height: 24px;
+
   }
 
   &__desc {
@@ -135,11 +185,19 @@
 
     @include phones {
       font-size: 1.3rem;
+      margin-top: 5px;
+      margin-bottom: 10px;
     }
   }
 
   &__pay-icon {
     margin-right: 16px;
+
+    @include phones {
+      margin-right: 0;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
 
     &--maestro {
       width: 29px;
