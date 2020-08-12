@@ -28,6 +28,10 @@
 
   &__desc {
     margin-bottom: 15px;
+
+    @include phones {
+      font-size: 1.5rem;
+    }
   }
 
 
@@ -91,6 +95,9 @@
       right: -25px;
     }
 
+    @include phones {
+      font-size: 1.5rem;
+    }
   }
 
 

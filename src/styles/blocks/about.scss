@@ -3,7 +3,7 @@
   margin: 0 auto;
   display: flex;
 }
- 
+
 .about {
   color: $colorDark;
   flex-direction: column;
@@ -160,8 +160,8 @@
     background-repeat: no-repeat;
     background-position: right -5% bottom -10px;
     background-size: 470px 550px;
-   
-   
+
+
     & .about__desc {
       @include tablets {
         padding-bottom: 400px
@@ -170,7 +170,7 @@
 
       @include phones {
         padding-bottom: 0;
-        background-size: 13.5rem 16.25rem;     
+        background-size: 13.5rem 16.25rem;
       }
     }
 
@@ -356,7 +356,10 @@
         margin-top: 20px;
       }
 
-
+      @include phones {
+        font-size: 2rem;
+        line-height: 2rem;
+      }
 
 
     }
@@ -395,6 +398,9 @@
     font-weight: 300;
     margin-bottom: 20px;
 
+    @include phones {
+      font-size: 1.3rem;
+    }
   }
 
   &__link {

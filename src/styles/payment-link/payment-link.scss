@@ -54,6 +54,12 @@
   padding: 140px 0px 0px 0px;
   background-color: white;
 
+  &__desc {
+    @include phones {
+      font-size: 1.5rem;
+    }
+  }
+
   @include tablets {
     padding: 50px;
   }

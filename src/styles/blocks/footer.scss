@@ -56,12 +56,20 @@
     font-size: 16px;
     font-weight: 700;
     line-height: 2.25;
+
+    @include phones {
+      font-size: 1.23rem;
+    }
   }
 
   &__link {
     font-size: 16px;
     font-weight: 300;
     line-height: 2.25;
+
+    @include phones {
+      font-size: 1.23rem;
+    }
 
     &:not(.footer__link--main) {
       @include phones {
@@ -149,6 +157,10 @@
     color: #787b7f;
     display: flex;
     justify-content: space-between;
+
+    @include phones {
+      font-size: 1.23rem;
+    }
   }
 
   &__designer {
