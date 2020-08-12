@@ -135,6 +135,12 @@
     background-color: #101820;
   }
 
+  .menu__btn--red-bg>span,
+  .menu__btn--red-bg>span::before,
+  .menu__btn--red-bg>span::after {
+    background-color: #df271c;
+  }
+
 
   .menu__btn>span::before {
     content: '';
