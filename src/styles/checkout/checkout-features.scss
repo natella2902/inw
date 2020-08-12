@@ -24,6 +24,10 @@
     font-size: 20px;
     font-weight: 300;
     margin-bottom: 15px;
+
+    @include phones {
+      font-size: 1.3rem;
+    }
   }
 
   &__item {
@@ -39,6 +43,11 @@
       margin-bottom: 33px;
       line-height: 30px;
       font-weight: 500;
+
+      @include phones {
+        font-size: 2rem;
+        line-height: 2.4rem;
+      }
     }
 
     @media screen and (max-width: 690px) {
