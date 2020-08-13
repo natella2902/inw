@@ -1,6 +1,10 @@
 .payment-methods {
   padding-top: 92px;
 
+  &--dotted {
+    border-bottom: 2px dotted #d6d6d6 !important;
+  }
+
   @include tablets {
     margin-bottom: 50px;
   }
@@ -30,7 +34,10 @@
   }
 
   &__europe,
-  &__america {
+  &__america,
+  &__latin,
+  &__asia,
+  &__africa {
     display: flex;
     flex-direction: column;
 
@@ -39,16 +46,30 @@
     }
   }
 
-  &__europe {
+  &__europe,
+  &__america,
+  &__latin,
+  &__asia {
     border-bottom: 1px solid #d6d6d6;
   }
 
-  &__america {
+  &__america, 
+  &__latin,
+  &__asia,
+  &__africa {
     padding-top: 59px;
+  }
+
+  &__africa {
+    padding-bottom: 100px;
   }
 
   &__row {
     margin-bottom: 48px;
+
+    &:last-of-type .payment-methods__item {
+      border: 1px solid transparent;
+    }
 
     @media screen and (max-width: 580px) {
       margin-left: 15px;
@@ -60,12 +81,10 @@
       margin-bottom: 0;
     }
 
-    &:first-of-type {
-      .payment-methods__item {
-
-        border-bottom: 1px dotted #d6d6d6;
-      }
+    .payment-methods__item {
+      border-bottom: 2px dotted #d6d6d6;
     }
+    
 
     @include phones {
       &:nth-of-type(2) {
@@ -90,8 +109,13 @@
 
   }
 
+  &__start {
+    justify-content: flex-start;
+  }
+
   &__item {
-    flex: 1;
+    //flex: 1;
+    flex-basis: 33%;
     padding-bottom: 45px;
     margin-right: 25px;
 
@@ -176,6 +200,7 @@
     margin-right: 15px;
     width: 40px;
     height: 24px;
+    border: 1px solid #e7e7e7;
 
   }
 
@@ -222,6 +247,134 @@
     &--paypal {
       width: 20px;
       height: 23px;
+    }
+
+    &--bancontact {
+      width: 27px;
+      height: 12px;
+    }
+
+    &--klarna {
+      width: 25px;
+      height: 25px;
+    }
+
+    &--visa {
+      width: 26px;
+      height: 9px;
+    }
+
+    &--ideal {
+      width: 20px;
+      height: 17px;
+    }
+
+    &--trustly {
+      width: 16px;
+      height: 19px;
+    }
+
+    &--qiwi {
+      width: 20px;
+      height: 20px;
+    }
+
+    &--sepa {
+      width: 25px;
+      height: 15px;  
+    }
+
+    &--przelewy24 {
+      width: 29px;
+      height: 13px;
+    }
+
+    &--giropay {
+      width: 26px;
+      height: 11px;
+    }
+
+    &--trusly {
+      width: 16px;
+      height: 19px;
+    }
+
+    &--cartes {
+      width: 25px;
+      height: 17px;
+    }
+
+    &--webmoney {
+      width: 25px;
+      height: 25px;
+    }
+
+    &--yandex {
+      width: 18px;
+      height: 23px;
+    }
+
+    &--afterpay {
+      width: 26px;
+      height: 15px;
+    }
+
+    &--interac {
+      width: 22px;
+      height: 22px;
+    }
+
+    &--oxxo {
+      width: 29px;
+      height: 16px;
+    }
+
+    &--discover {
+      width: 24px;
+      height: 24px;
+    }
+
+    &--poli {
+      width: 21px;
+      height: 21px;
+    }
+
+    &--tenpay {
+      width: 21px;
+      height: 17px;
+    }
+
+    &--astropay {
+      width: 29px;
+      height: 16px;
+    }
+
+    &--unionpay {
+      width: 24px;
+      height: 15px;
+    }
+
+
+
+    &--JCB {
+      width: 29px;
+      height: 22px;
+    }
+
+    &--cash-u {
+      width: 28px;
+      height: 22px;
+    }
+
+    &--others, 
+    &--invoice, 
+    &--transfer, 
+    &--cod, 
+    &--cartasi,
+    &--cash {
+      width: 25px;
+      height: 25px;
+      
     }
   }
 }
