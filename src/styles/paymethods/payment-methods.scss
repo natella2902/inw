@@ -51,6 +51,10 @@
   &__latin,
   &__asia {
     border-bottom: 1px solid #d6d6d6;
+
+    @include phones {
+      border-bottom: 1px solid transparent;
+    }
   }
 
   &__america, 
@@ -62,13 +66,20 @@
 
   &__africa {
     padding-bottom: 100px;
+      @include phones {
+        padding-bottom: 0;
+      }
   }
 
   &__row {
     margin-bottom: 48px;
 
     &:last-of-type .payment-methods__item {
-      border: 1px solid transparent;
+      border-bottom: 1px solid transparent;
+
+      @include phones {
+        border-bottom: 2px dotted #d6d6d6;
+      }
     }
 
     @media screen and (max-width: 580px) {
@@ -89,11 +100,11 @@
     @include phones {
       &:nth-of-type(2) {
         .payment-methods__item {
-          border-bottom: 1px dotted #d6d6d6;
+          border-bottom: 2px dotted #d6d6d6;
 
-          &:last-child {
-            border: none;
-          }
+          // &:last-child {
+          //   border: none;
+          // }
         }
       }
     }
