@@ -21,16 +21,13 @@ menu.addEventListener('mouseleave', function () {
 openBurger.addEventListener('click', function (e) {
   if (e.currentTarget.checked) {
     menu.style["display"] = 'flex';
-    header.style['backgroundColor'] = 'white';
-    contacts.style['backgroundColor'] = '#df271c';
-    contacts.style['color'] = 'white';
-
+    header.classList.add('header--white');
+    contacts.classList.add('contacts--hover-menu');
     logo.classList.add('header__logo--red');
     lineRed.classList.add('menu__btn--red-bg');
 
   } else {
     menu.style["display"] = 'none';
-    //lineRed.classList.remove('menu__btn--red-bg');
   }
 
 });
