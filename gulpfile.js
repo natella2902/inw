@@ -16,6 +16,7 @@ const svgo = require('gulp-svgo');
 const svgSprite = require('gulp-svg-sprite');
 const gulpif = require('gulp-if');
 
+
 const env = process.env.NODE_ENV;
 
 
@@ -56,8 +57,8 @@ task('copyPicture', () => {
 
 task('icons', () => {
   return src(`${SRC_PATH}/svg/*.svg`)
-  .pipe(dest(`${DIST_PATH}/images/icons`))
-  .pipe(reload({stream: true}));
+    .pipe(dest(`${DIST_PATH}/images/icons`))
+    .pipe(reload({ stream: true }));
 })
 
 /*
@@ -120,8 +121,8 @@ task('scripts', () => {
 
 task('icons', () => {
   return src(`${SRC_PATH}/svg/*.svg`)
-  .pipe(dest(`${DIST_PATH}/images/icons`))
-  .pipe(reload({stream: true}));
+    .pipe(dest(`${DIST_PATH}/images/icons`))
+    .pipe(reload({ stream: true }));
 })
 
 

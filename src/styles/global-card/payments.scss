@@ -2,12 +2,25 @@
   min-height: 700px;
   padding-top: 90px;
   padding-bottom: 90px;
-  background-image: url("./pictures/global-left.png"), url("./pictures/global-right.png");
-  background-repeat: no-repeat, no-repeat;
-  background-position-x: left, right;
-  background-position-y: center, center;
-  background-size: 13%, 22%;
+
   margin: 50px 50px 0px 50px;
+  position: relative;
+
+  &__bg {
+    position: absolute;
+    height: 90%;
+    top: 0;
+    left: 0%;
+    z-index: 5;
+
+    &--right {
+      position: absolute;
+      height: 90%;
+      top: 0;
+      left: 60%;
+      z-index: 5;
+    }
+  }
 
   @media screen and (max-width: 1020px) {
     background-image: none;
@@ -28,6 +41,7 @@
     text-align: left;
     max-width: 44.5rem;
 
+
     @media screen and (max-width: 1020px) {
       align-items: flex-start;
       max-width: 100%;
@@ -46,6 +60,7 @@
     align-items: flex-start;
     padding-left: 10px;
     margin-bottom: 35px;
+    z-index: 15;
 
     @media screen and (max-width: 1020px) {
       padding-left: 0;
@@ -77,5 +92,6 @@
     font-size: 24px;
     font-weight: 300;
     max-width: 680px;
+    z-index: 15;
   }
 }

@@ -1,0 +1,13 @@
+.hero__img {
+  position: relative;
+}
+
+.hero__pic {
+  z-index: 10;
+}
+
+.hero__parallax {
+  position: absolute;
+  top: 0%;
+  z-index: 5;
+}

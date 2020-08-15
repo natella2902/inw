@@ -378,20 +378,19 @@
 
   &--global {
     min-height: 640px;
-    background-image: url("./pictures/countries.png");
-    background-size: 57%;
-    background-position: 95% 0%;
-    background-repeat: no-repeat;
+    // background-image: url("./pictures/countries.png");
+// background-size: 57%;
+// background-position: 95% 0%;
+// background-repeat: no-repeat;
 
-    @include tablets {
-      background-position: 50% 58%;
-    }
+// @include tablets {
+//   background-position: 50% 58%;
+// }
 
-    @include phones {
-      background-size: 100%;
-      background-position: 0% 65%;
-    }
-
+// @include phones {
+//   background-size: 100%;
+//   background-position: 0% 65%;
+// }
   }
 }
 
