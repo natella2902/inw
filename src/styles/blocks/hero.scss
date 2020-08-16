@@ -41,6 +41,10 @@
 
   }
 
+  &__title {
+    z-index: 15;
+  }
+
   &__pic {
     width: 100%;
     height: 100%;
@@ -50,7 +54,7 @@
   &__subtitle {
     margin: 15px 0 40px;
     padding: 0 5% 0 0;
-
+    z-index: 15;
     font-size: 24px;
     font-weight: 300;
     line-height: 34px;
@@ -89,6 +93,7 @@
 .ditails {
   display: flex;
   align-items: center;
+
 }
 
 
@@ -102,7 +107,7 @@
   outline: none;
   border-radius: 21px 0 0 21px;
   cursor: pointer;
-
+  z-index: 15;
   margin-right: 50px;
 
   position: relative;
@@ -378,19 +383,6 @@
 
   &--global {
     min-height: 640px;
-    // background-image: url("./pictures/countries.png");
-// background-size: 57%;
-// background-position: 95% 0%;
-// background-repeat: no-repeat;
-
-// @include tablets {
-//   background-position: 50% 58%;
-// }
-
-// @include phones {
-//   background-size: 100%;
-//   background-position: 0% 65%;
-// }
   }
 }
 
@@ -580,5 +572,71 @@
         margin-bottom: 15px;
       }
     }
+  }
+}
+
+.hero__img-wrapper {
+  width: 88px;
+  height: 88px;
+  position: absolute;
+
+  &--britain {
+    top: -2%;
+    left: -33%;
+  }
+
+  &--ger {
+    top: 0%;
+    left: 51%;
+    width: 73px;
+    height: 73px;
+  }
+
+  &--us {
+    top: 7%;
+    right: -11%;
+    width: 91px;
+    height: 91px;
+  }
+
+  &--france {
+    top: -1%;
+    left: 12%;
+    width: 59px;
+    height: 59px;
+  }
+
+  &--est {
+    top: 18%;
+    left: 43%;
+    width: 46px;
+    height: 46px;
+  }
+
+  &--it {
+    top: 81%;
+    right: -2%;
+    width: 73px;
+    height: 73px;
+  }
+
+  &--rus {
+    top: 66%;
+    left: -28%;
+    width: 92px;
+    height: 92px;
+  }
+
+  &--spain {
+    top: 21%;
+    left: -8%;
+    width: 65px;
+    height: 65px;
+  }
+
+
+  .hero__flag {
+    width: 100%;
+    height: 100%;
   }
 }
