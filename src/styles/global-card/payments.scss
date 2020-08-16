@@ -6,21 +6,6 @@
   margin: 50px 50px 0px 50px;
   position: relative;
 
-  &__bg {
-    position: absolute;
-    height: 90%;
-    top: 0;
-    left: 0%;
-    z-index: 5;
-
-    &--right {
-      position: absolute;
-      height: 90%;
-      top: 0;
-      left: 60%;
-      z-index: 5;
-    }
-  }
 
   @media screen and (max-width: 1020px) {
     background-image: none;
@@ -40,7 +25,6 @@
     align-items: center;
     text-align: left;
     max-width: 44.5rem;
-
 
     @media screen and (max-width: 1020px) {
       align-items: flex-start;
@@ -93,5 +77,94 @@
     font-weight: 300;
     max-width: 680px;
     z-index: 15;
+  }
+}
+
+.payments {
+  &__img-wrapper {
+    position: absolute;
+
+    &--yen {
+      width: 26px;
+      height: 34px;
+      top: 17%;
+      left: 8%;
+    }
+
+    &--rb {
+      width: 31px;
+      height: 34px;
+      bottom: 22%;
+      left: 13%;
+    }
+
+    &--pound {
+      width: 33px;
+      height: 40px;
+      top: 55%;
+      left: 3%;
+    }
+
+    &--mc {
+      width: 78px;
+      height: 48px;
+      top: 41%;
+      left: 7%;
+    }
+
+    &--ali {
+      width: 55px;
+      height: 54px;
+      top: 3%;
+      left: 11%;
+    }
+
+
+    &--eu {
+      width: 40px;
+      height: 40px;
+      top: 5%;
+      right: 15%;
+    }
+
+    &--amex {
+      width: 67px;
+      height: 67px;
+      top: 18%;
+      right: 6%;
+    }
+
+    &--dollar {
+      width: 18px;
+      height: 32px;
+      top: 37%;
+      right: 4%;
+    }
+
+    &--visa {
+      width: 89px;
+      height: 28px;
+      top: 46%;
+      right: 11%;
+    }
+
+    &--qiwi {
+      width: 54px;
+      height: 56px;
+      bottom: 27%;
+      right: 8%;
+    }
+
+    &--apple {
+      width: 71px;
+      height: 29px;
+      bottom: 22%;
+      right: 20%;
+    }
+
+    .payments__icon {
+      width: 100%;
+      height: 100%;
+    }
   }
 }
