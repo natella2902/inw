@@ -10,8 +10,8 @@ new simpleParallax(image, {
 // параллакс для движения мышью
 
 // global card
-var scene = document.getElementsByClassName('scene');
-new Parallax(scene, {
+var scene = document.getElementById('scene');
+var parallaxInstance = new Parallax(scene, {
 	selector: ".layer",
 	frictionX: 0.04,
 	frictionY: 0.04
