@@ -4,6 +4,66 @@
 
 }
 
+.point-about {
+  position: relative;
+}
+
+.bubble {
+  position: absolute;
+  
+}
+
+.bubble1 {
+  top: 40%;
+  left: 90%;
+}
+
+.bubble2 {
+  left: 500px;
+  top: 10%;
+}
+
+.bubble3 {
+  bottom: 15%;
+  left: 75%;
+}
+
+.bubble4 {
+  left: 7%;
+  top: 85%;
+}
+
+.bubble5 {
+  left: 7%;
+  top: 21%;
+}
+
+.bubble6 {
+  left: 41%;
+  top: 31%;
+}
+
+.bubble7 {
+  right: 52%;
+  top: 78%;
+}
+
+.bubble8 {
+  left: 7%;
+  top: 85%;
+}
+
+.bubble9 {
+  left: 95%;
+  top: 90%;
+}
+
+.bubble10 {
+  left: 17%;
+  top: 55%;
+}
+
+
 .point-hero {
 
   @include phones {
@@ -50,11 +110,11 @@
 
 .point-about {
   background-color: $colorWhite;
-  background-image: url("./pictures/pos-left.png"), url("./pictures/pos-right.png");
-  background-repeat: no-repeat, no-repeat;
-  background-position-x: 2%, 98%;
-  background-position-y: 40%, 40%;
-  background-size: 41%, 41%;
+  //background-image: url("./pictures/pos-left.png"), url("./pictures/pos-right.png");
+  //background-repeat: no-repeat, no-repeat;
+  //background-position-x: 2%, 98%;
+  //background-position-y: 40%, 40%;
+  //background-size: 41%, 41%;
   padding: 100px 0 100px;
 
   @include tablets {

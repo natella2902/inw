@@ -2920,6 +2920,52 @@ body {
   background-color: #b4e29d;
   color: #000; }
 
+.point-about {
+  position: relative; }
+
+.bubble {
+  position: absolute; }
+
+.bubble1 {
+  top: 40%;
+  left: 90%; }
+
+.bubble2 {
+  left: 31.25rem;
+  top: 10%; }
+
+.bubble3 {
+  bottom: 15%;
+  left: 75%; }
+
+.bubble4 {
+  left: 7%;
+  top: 85%; }
+
+.bubble5 {
+  left: 7%;
+  top: 21%; }
+
+.bubble6 {
+  left: 41%;
+  top: 31%; }
+
+.bubble7 {
+  right: 52%;
+  top: 78%; }
+
+.bubble8 {
+  left: 7%;
+  top: 85%; }
+
+.bubble9 {
+  left: 95%;
+  top: 90%; }
+
+.bubble10 {
+  left: 17%;
+  top: 55%; }
+
 @media screen and (max-width: 480px) {
   .point-hero__container {
     flex-direction: column;
@@ -2951,11 +2997,6 @@ body {
 
 .point-about {
   background-color: #fff;
-  background-image: url("./pictures/pos-left.png"), url("./pictures/pos-right.png");
-  background-repeat: no-repeat, no-repeat;
-  background-position-x: 2%, 98%;
-  background-position-y: 40%, 40%;
-  background-size: 41%, 41%;
   padding: 6.25rem 0 6.25rem; }
   @media screen and (max-width: 768px) {
     .point-about {
@@ -3202,7 +3243,6 @@ body {
       background-position: center bottom; } }
   @media screen and (max-width: 480px) {
     .point-transactions {
-      background-image: url("./pictures/pos-ipad.png");
       background-size: 26.875rem 20.625rem;
       background-position: center bottom;
       padding: 0rem 0 0rem 0;
@@ -4174,7 +4214,10 @@ body {
       padding: 3.125rem 3.125rem 3.125rem 3.125rem; } }
   @media screen and (max-width: 480px) {
     .data-about {
-      padding: 3.125rem 0rem 3.125rem 0rem; } }
+      padding: 3.125rem 0rem 3.125rem 0rem;
+      background-image: url("./images/icons/tiger.svg");
+      background-repeat: no-repeat;
+      background-position: top 3.125rem left -1.875rem; } }
   .data-about__container {
     display: flex;
     justify-content: flex-end; }
@@ -4189,10 +4232,7 @@ body {
     background-position: left -1.875rem bottom; }
     @media screen and (max-width: 480px) {
       .data-about__img {
-        width: 34.375rem;
-        height: 15.5rem;
-        background-position: top left;
-        margin-bottom: 3.125rem; } }
+        background-image: none; } }
   .data-about__pic {
     width: 100%;
     height: 100%; }
