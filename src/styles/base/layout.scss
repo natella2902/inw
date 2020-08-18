@@ -297,8 +297,8 @@ table {
   &:after {
     content: "";
     display: block;
-    border: 27px solid transparent;
-    border-left: 27px solid #fff;
+    border: 26px solid transparent;
+    border-left: 26px solid #fff;
     position: absolute;
     top: -2px;
     left: 100%;
@@ -312,8 +312,8 @@ table {
     &:after {
       content: "";
       display: block;
-      border: 27px solid transparent;
-      border-left: 27px solid $colorRed;
+      border: 26px solid transparent;
+      border-left: 26px solid $colorRed;
       position: absolute;
       top: -2px;
       left: 100%;
@@ -328,11 +328,12 @@ table {
     &:after {
       content: "";
       display: block;
-      border: 27px solid transparent;
-      border-left: 27px solid $colorUltramarine;
+      border: 26px solid transparent;
+      border-left: 26px solid $colorUltramarine;
       position: absolute;
       top: -2px;
       left: 100%;
+      
     }
   }
 }
