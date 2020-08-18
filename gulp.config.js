@@ -6,5 +6,6 @@ module.exports = {
   ],
   JS_LIBS: [
     //'node_modules/jquery/dist/jquery.js'
+    // 'node_modules/parallax-js/src/parallax.js'
   ]
 }
