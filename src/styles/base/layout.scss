@@ -112,7 +112,6 @@ body {
   // border: 1px solid blue;
   position: relative;
 
-
   &--main {
     background-image: url("./pictures/logotype-huge.png");
     background-position: top 1% right 0;
@@ -242,9 +241,10 @@ table {
   display: flex;
   //height: 100%;
 
+  
   @include tablets {
     height: initial;
-    width: initial;
+    width: 90%;
   }
 
   @include phones {

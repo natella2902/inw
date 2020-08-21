@@ -3,6 +3,11 @@
 }
 */
 
+@mixin ipadPro {
+    @media screen and (max-width: $ipadPro) {
+        @content;
+    }
+}
 
 @mixin tablets {
     @media screen and (max-width: $tablets) {

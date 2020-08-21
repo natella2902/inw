@@ -2,7 +2,7 @@
   padding-top: 92px;
 
   &--dotted {
-    border-bottom: 2px dotted #d6d6d6 !important;
+    border-bottom: 1px dotted #d6d6d6 !important;
   }
 
   @include tablets {
@@ -78,7 +78,7 @@
       border-bottom: 1px solid transparent;
 
       @include phones {
-        border-bottom: 2px dotted #d6d6d6;
+        border-bottom: 1px dotted #d6d6d6;
       }
     }
 
@@ -93,14 +93,14 @@
     }
 
     .payment-methods__item {
-      border-bottom: 2px dotted #d6d6d6;
+      border-bottom: 1px dotted #d6d6d6;
     }
     
 
     @include phones {
       &:nth-of-type(2) {
         .payment-methods__item {
-          border-bottom: 2px dotted #d6d6d6;
+          border-bottom: 1px dotted #d6d6d6;
 
           // &:last-child {
           //   border: none;

@@ -27,11 +27,13 @@
     width: 46%;
 
     @include tablets {
-      width: 80%;
+      width: 100%;
+      margin-top: 50px;
     }
 
     @include phones {
       width: 100%;
+      margin-top: 0;
     }
   }
 

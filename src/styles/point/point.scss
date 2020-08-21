@@ -10,6 +10,10 @@
 
 .bubble {
   position: absolute;
+
+  @include phones {
+    display: none;
+  }
   
 }
 

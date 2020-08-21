@@ -84,10 +84,11 @@
       line-height: 32px;
       font-size: 19px;
       margin-top: 20px;
+      margin: 20px 0 5px;
+    }
 
-      &:first-child {
-        margin-top: 0;
-      }
+    @include phones {
+      margin: 10px 0 5px;
     }
   }
 
