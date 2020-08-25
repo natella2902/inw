@@ -10,7 +10,7 @@ for (let i = 0; i < images.length; i++) {
 	});
 }
 
-// // параллакс для движения мышью
+// // параллакс для движения мышь
 
 // // global card
 // var scene = document.getElementById('scene');
