@@ -126,12 +126,12 @@
   height: 80px;
   position: fixed;
   top: 0;
-  transition: top 0.2s ease-in-out;
+  transition: display 0.2s ease-out;
   width: 100%;
 }
 
 .nav-up {
-  top: -80px;
+  display: none;
 }
 
 .nav-down {

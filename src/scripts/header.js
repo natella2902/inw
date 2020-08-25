@@ -13,10 +13,12 @@ setInterval(function () {
 		hasScrolled();
 		didScroll = false;
 	}
-}, 250);
+}, 100);
 
 function hasScrolled() {
 	var st = $(this).scrollTop();
+
+	console.log(st);
 
 	// Make sure they scroll more than delta
 	if (Math.abs(lastScrollTop - st) <= delta)
@@ -26,15 +28,16 @@ function hasScrolled() {
 	// This is necessary so you never see what is "behind" the navbar.
 	if (st > lastScrollTop && st > navbarHeight) {
 		// Scroll Down
-		//$('header').removeClass('nav-down').addClass('nav-up');
-		$('header').removeClass('nav-up').addClass('nav-down');
+		$('header').removeClass('nav-down').addClass('nav-up');
+		console.log('nav-up // вниз')
 	} else {
 		// Scroll Up
 		if (st + $(window).height() < $(document).height()) {
 			$('header').removeClass('nav-up').addClass('nav-down');
+			console.log('nav-down // вверх')
 		}
 
-		if (lastScrollTop < 100) {
+		if (lastScrollTop < 200) {
 			$('header').removeClass('nav-up').removeClass('nav-down');
 		}
 	}
