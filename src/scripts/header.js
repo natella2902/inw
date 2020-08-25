@@ -33,7 +33,7 @@ function hasScrolled() {
 			$('header').removeClass('nav-up').addClass('nav-down');
 		}
 
-		if (lastScrollTop < 200) {
+		if (lastScrollTop < 100) {
 			$('header').removeClass('nav-up').removeClass('nav-down');
 		}
 	}
