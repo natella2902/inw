@@ -9,20 +9,3 @@ for (let i = 0; i < images.length; i++) {
 		scale: 1.9
 	});
 }
-
-// // параллакс для движения мышь
-
-// // global card
-// var scene = document.getElementById('scene');
-// var parallaxInstance = new Parallax(scene, {
-// 	selector: ".layer",
-// 	frictionX: 0.04,
-// 	frictionY: 0.04
-// });
-
-// var paymentScene = document.getElementById('paymentscene');
-// var parallaxInstance = new Parallax(paymentScene, {
-// 	selector: ".layer",
-// 	frictionX: 0.04,
-// 	frictionY: 0.04
-// });
